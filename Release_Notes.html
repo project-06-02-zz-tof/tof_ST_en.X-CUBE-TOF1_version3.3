@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Release Notes for X-CUBE-TOF1 Software Pack for STM32</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <link rel="icon" type="image/x-icon" href="_htmresc/favicon.png" />
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-4">
+<center>
+<h1 id="release-notes-for-x-cube-tof1-software-pack-for-stm32">Release Notes for <mark>X-CUBE-TOF1</mark> Software Pack for STM32</h1>
+<p>Copyright © 2022 STMicroelectronics<br />
+</p>
+<a href="https://www.st.com" class="logo"><img src="_htmresc/st_logo_2020.png" alt="ST logo" /></a>
+</center>
+<h1 id="purpose">Purpose</h1>
+<p>The <strong>X-CUBE-TOF1</strong> software pack is an expansion for <strong>STM32Cube</strong>. This software is gathering ranging sensor drivers for VL53L1CB, VL53L3CX, VL53L4CX, VL53L4CD, VL53L5CX, VL53L7CX and VL53L8CX running on STM32. It is built on top of STM32Cube software technology that ease portability across different STM32 microcontrollers.</p>
+<p><strong>X-CUBE-TOF1</strong> software features:</p>
+<ul>
+<li>Complete software to build applications using VL53L1CB, VL53L3CX, VL53L4CX, VL53L4CD, VL53L5CX, VL53L7CX or VL53L8CX</li>
+<li>Easy portability across different MCU families thanks to STM32Cube</li>
+<li>Example implementation available on the board X-NUCLEO-53L1A2, X-NUCLEO-53L3A2, X-NUCLEO-53L4A2, X-NUCLEO-53L4A1, X-NUCLEO-53L5A1, X-NUCLEO-53L7A1 , X-NUCLEO-53L8A1 STM32 expansion boards plugged on top of one NUCLEO-F401RE or NUCLEO-L476RG</li>
+</ul>
+<p><img src="_htmresc/xcubetof1-arch.png" alt="The X-CUBE-TOF1 package contents" /><br />
+</p>
+<p>Here is the list of references to user documents:</p>
+<ul>
+<li><a href="https://www.st.com/content/st_com/en/stm32cube-ecosystem.html">STM32Cube</a></li>
+<li><a href="https://www.st.com/en/evaluation-tools/stm32-nucleo-boards.html">STM32 Nucleo boards</a></li>
+<li><a href="https://www.st.com/en/evaluation-tools/stm32-nucleo-expansion-boards.html">STM32 Nucleo expansion boards</a></li>
+</ul>
+</div>
+<div class="col-sm-12 col-lg-8">
+<h1 id="update-history">Update history</h1>
+<div class="collapse">
+<input type="checkbox" id="collapse-section6" checked aria-hidden="true"> <label for="collapse-section6" aria-hidden="true"><strong>V3.3.0 / Dec 15th 2022</strong></label>
+<div>
+<h2 id="main-changes">Main changes</h2>
+<h3 id="product-update">Product Update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Add X-NUCLEO-53L8A1 BSP Driver V1.0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Add VL53L8CX BSP Component V1.0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update VL53L1CB BSP Component to v1.0.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L3CX BSP Component to v2.0.3</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update VL53L4CD BSP Component to v1.0.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L4CX BSP Component to v1.0.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update VL53L5CX BSP Component to v1.0.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L7CX BSP Component to v1.0.1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Components</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L8A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L8A1/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L8CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l8cx/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L7A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L7A1/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L7CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l7cx/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L4A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L4A1/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L4CD BSP Component</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l4cd/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L4A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L4A2/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L4CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l4cx/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L1A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L1A2/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L1CB BSP Component</strong></td>
+<td style="text-align: left;">V1.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l1cb/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L3A2 BSP Driver</strong></td>
+<td style="text-align: left;">V2.0.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L3A2/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L3CX BSP Component</strong></td>
+<td style="text-align: left;">V2.0.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l3cx/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L5A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.5<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L5A1/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L5CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.4<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l5cx/Release_Notes.html">release note URL</a></td>
+</tr>
+</tbody>
+</table>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The pack doesn’t prevent multiple devices selection in Custom ranging examples generation. This will be fixed in a next release.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The combination Custom / RANGING SENSOR + Board Part Ranging without Application selected shall not be used even if the pack doesn’t prevent it. This will be fixed in a next release</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">The 53L3A2_MultiSensorRanging, 53L4A2_MultiSensorRanging and 53L1A2_MultiSensorRanging sample applications don’t support multi target detection</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">When generating projects for STM32U5 it is possible that you will encounter compilation errors related to missing BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN symbols in custom_bus.h. When manually adding BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN the application compiles without errors.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers">Development toolchains and compilers</h2>
+<ul>
+<li>IAR System Workbench V9.20.1</li>
+<li>ARM Keil V5.37</li>
+<li>STM32CubeIDE v1.11.0</li>
+</ul>
+<h2 id="supported-devices-and-boards">Supported devices and boards</h2>
+<ul>
+<li>NUCLEO-F401RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>VL53L1CB / X-NUCLEO-53L1A2 / VL53L1-SATEL</li>
+<li>VL53L3CX / X-NUCLEO-53L3A2 / VL53L3CX-SATEL</li>
+<li>VL53L4CD / X-NUCLEO-53L4A1 / SATEL-VL53L4CD</li>
+<li>VL53L4CX / X-NUCLEO-53L4A2 / SATEL-VL53L4CX</li>
+<li>VL53L5CX / X-NUCLEO-53L5A1 / VL53L5CX-SATEL</li>
+<li>VL53L7CX / X-NUCLEO-53L7A1 / VL53L7CX-SATEL</li>
+<li>VL53L8CX / X-NUCLEO-53L8A1 / VL53L8CX-SATEL</li>
+</ul>
+<h2 id="backward-compatibility">Backward compatibility</h2>
+<p>N/A</p>
+<h2 id="dependencies">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL F4 V1.8.0</li>
+<li>STM32CubeHAL L4 V1.13.2</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section5" aria-hidden="true"> <label for="collapse-section5" aria-hidden="true"><strong>V3.2.0 / Sept 25th 2022</strong></label>
+<div>
+<h2 id="main-changes-1">Main changes</h2>
+<h3 id="product-update-1">Product Update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Add X-NUCLEO-53L7A1 BSP Driver V1.0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Add VL53L7CX BSP Component V1.0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update X-NUCLEO-53L5A1 BSP to v1.0.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L5CX BSP Component to v1.0.3</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents-1">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Components</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L7A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L7A1/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L7CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l7cx/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L4A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L4A1/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L4CD BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l4cd/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L4A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L4A2/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L4CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l4cx/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L1A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L1A2/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L1CB BSP Component</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l1cb/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L3A2 BSP Driver</strong></td>
+<td style="text-align: left;">V2.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L3A2/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L3CX BSP Component</strong></td>
+<td style="text-align: left;">V2.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l3cx/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L5A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.4<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L5A1/Release_Notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L5CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l5cx/Release_Notes.html">release note URL</a></td>
+</tr>
+</tbody>
+</table>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations-1">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The pack doesn’t prevent multiple devices selection in Custom ranging examples generation. This will be fixed in a next release.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The combination Custom / RANGING SENSOR + Board Part Ranging without Application selected shall not be used even if the pack doesn’t prevent it. This will be fixed in a next release</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">The 53L3A2_MultiSensorRanging, 53L4A2_MultiSensorRanging and 53L1A2_MultiSensorRanging sample applications don’t support multi target detection</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">When generating projects for STM32U5 it is possible that you will encounter compilation errors related to missing BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN symbols in custom_bus.h. When manually adding BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN the application compiles without errors.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers-1">Development toolchains and compilers</h2>
+<ul>
+<li>IAR System Workbench V9.20.1</li>
+<li>ARM Keil V5.37</li>
+<li>STM32CubeIDE v1.10.1</li>
+</ul>
+<h2 id="supported-devices-and-boards-1">Supported devices and boards</h2>
+<ul>
+<li>NUCLEO-F401RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>VL53L1CB / X-NUCLEO-53L1A2 / VL53L1-SATEL</li>
+<li>VL53L3CX / X-NUCLEO-53L3A2 / VL53L3CX-SATEL</li>
+<li>VL53L4CD / X-NUCLEO-53L4A1 / SATEL-VL53L4CD</li>
+<li>VL53L4CX / X-NUCLEO-53L4A2 / SATEL-VL53L4CX</li>
+<li>VL53L5CX / X-NUCLEO-53L5A1 / VL53L5CX-SATEL</li>
+<li>VL53L7CX / X-NUCLEO-53L7A1 / VL53L7CX-SATEL</li>
+</ul>
+<h2 id="backward-compatibility-1">Backward compatibility</h2>
+<p>N/A</p>
+<h2 id="dependencies-1">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL F4 V1.8.0</li>
+<li>STM32CubeHAL L4 V1.13.2</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section4" aria-hidden="true"> <label for="collapse-section4" aria-hidden="true"><strong>V3.1.0 / May 11th 2022</strong></label>
+<div>
+<h2 id="main-changes-2">Main changes</h2>
+<h3 id="product-update-2">Product Update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Add X-NUCLEO-53L4A1 BSP Driver V1.0.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Add VL53L4CD BSP Component V1.0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Add X-NUCLEO-53L4A2 BSP Driver V1.0.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Add VL53L4CX BSP Component V1.0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update X-NUCLEO-53L1A2 BSP v1.0.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L1CB BSP Component v1.0.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update X-NUCLEO-53L3A2 BSP to v2.0.2</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L3CX BSP Component to v2.0.2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update X-NUCLEO-53L5A1 BSP to v1.0.3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L5CX BSP Component to v1.0.2</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents-2">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Components</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L4A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L4A1/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L4CD BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l4cd/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L4A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L4A2/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L4CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l4cx/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L1A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L1A2/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L1CB BSP Component</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l1cb/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L3A2 BSP Driver</strong></td>
+<td style="text-align: left;">V2.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L3A2/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L3CX BSP Component</strong></td>
+<td style="text-align: left;">V2.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l3cx/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L5A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.3<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L5A1/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L5CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.2<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l5cx/Release_notes.html">release note URL</a></td>
+</tr>
+</tbody>
+</table>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations-2">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The pack doesn’t prevent multiple devices selection in Custom ranging examples generation. This will be fixed in a next release.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">The combination Custom / RANGING SENSOR + Board Part Ranging without Application selected shall not be used even if the pack doesn’t prevent it. This will be fixed in a next release</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">The 53L3A2_MultiSensorRanging, 53L4A2_MultiSensorRanging and 53L1A2_MultiSensorRanging sample applications don’t support multi target detection</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">When generating projects for STM32U5 it is possible that you will encounter compilation errors related to missing BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN symbols in custom_bus.h. When manually adding BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN the application compiles without errors.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers-2">Development toolchains and compilers</h2>
+<ul>
+<li>IAR System Workbench V9.20.1</li>
+<li>ARM Keil V5.32</li>
+<li>STM32CubeIDE v1.9.0</li>
+</ul>
+<h2 id="supported-devices-and-boards-2">Supported devices and boards</h2>
+<ul>
+<li>NUCLEO-F401RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>VL53L1CB / X-NUCLEO-53L1A2 / VL53L1-SATEL</li>
+<li>VL53L3CX / X-NUCLEO-53L3A2 / VL53L3CX-SATEL</li>
+<li>VL53L4CD / X-NUCLEO-53L4A1 / SATEL-VL53L4CD</li>
+<li>VL53L4CX / X-NUCLEO-53L4A2 / SATEL-VL53L4CX</li>
+<li>VL53L5CX / X-NUCLEO-53L5A1 / VL53L5CX-SATEL</li>
+</ul>
+<h2 id="backward-compatibility-2">Backward compatibility</h2>
+<p>N/A</p>
+<h2 id="dependencies-2">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL F4 V1.7.12</li>
+<li>STM32CubeHAL L4 V1.13.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section3" aria-hidden="true"> <label for="collapse-section3" aria-hidden="true"><strong>V3.0.0 / January 12th 2022</strong></label>
+<div>
+<h2 id="main-changes-3">Main changes</h2>
+<h3 id="product-update-3">Product Update</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Add X-NUCLEO-53L1A2 BSP v1.0.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Add VL53L1CB BSP Component v1.0.0</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update X-NUCLEO-53L3A2 BSP to v2.0.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L3CX BSP Component to v2.0.1</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">Update X-NUCLEO-53L5A1 BSP to v1.0.1</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Update VL53L5CX BSP Component to v1.0.1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="contents-3">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Components</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L1A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L1A2/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L1CB BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l1cb/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L3A2 BSP Driver</strong></td>
+<td style="text-align: left;">V2.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L3A2/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L3CX BSP Component</strong></td>
+<td style="text-align: left;">V2.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l3cx/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L5A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L5A1/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L5CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.1<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l5cx/Release_notes.html">release note URL</a></td>
+</tr>
+</tbody>
+</table>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations-3">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The 53L3A2_MultiSensorRanging and 53L1A2_MultiSensorRanging sample applications don’t support multi target detection</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">When generating projects for STM32U5 it is possible that you will encounter compilation errors related to missing BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN symbols in custom_bus.h. When manually adding BUS_I2C1_SDA_GPIO_PORT and BUS_I2C1_SDA_GPIO_PIN the application compiles without errors.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers-3">Development toolchains and compilers</h2>
+<ul>
+<li>IAR System Workbench V8.50.9</li>
+<li>ARM Keil V5.32</li>
+<li>STM32CubeIDE v1.8.0</li>
+</ul>
+<h2 id="supported-devices-and-boards-3">Supported devices and boards</h2>
+<ul>
+<li>NUCLEO-F401RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>VL53L1CB / X-NUCLEO-53L1A2 / VL53L1-SATEL</li>
+<li>VL53L3CX / X-NUCLEO-53L3A2 / VL53L3CX-SATEL</li>
+<li>VL53L5CX / X-NUCLEO-53L5A1 / VL53L5CX-SATEL</li>
+</ul>
+<h2 id="backward-compatibility-3">Backward compatibility</h2>
+<p>N/A</p>
+<h2 id="dependencies-3">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL F4 V1.7.12</li>
+<li>STM32CubeHAL L4 V1.13.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section2" aria-hidden="true"> <label for="collapse-section2" aria-hidden="true"><strong>V2.0.0 / July 1st 2021</strong></label>
+<div>
+<h2 id="main-changes-4">Main changes</h2>
+<h3 id="product-update-4">Product Update</h3>
+<ul>
+<li>Add X-NUCLEO-53L5A1 BSP v1.0.0</li>
+<li>Add VL53L5CX BSP Component v1.0.0</li>
+<li><p>Add 53L5A1_MultiSensorRanging, 53L5A1_SimpleRanging and 53L5A1_ThresholdDetection sample applications</p></li>
+<li>Update X-NUCLEO-53L3A2 BSP to v2.0.0</li>
+<li><p>Update VL53L3CX BSP Component to v2.0.0</p></li>
+</ul>
+<h2 id="contents-4">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Components</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L3A2 BSP Driver</strong></td>
+<td style="text-align: left;">V2.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L3A2/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L3CX BSP Component</strong></td>
+<td style="text-align: left;">V2.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l3cx/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L5A1 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L5A1/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L5CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l5cx/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>53L3A2_MultiSensorRanging Example</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/87/0c/3d/ad/0a/ba/44/26/DM00216740/files/DM00216740.pdf/jcr:content/translations/en.DM00216740.pdf">SLA0044</a></td>
+<td style="text-align: left;"><a href="./Projects/NUCLEO-F401RE/Examples/53L3A2/53L3A2_MultiSensorRanging/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>53L3A2_SimpleRanging Example</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/87/0c/3d/ad/0a/ba/44/26/DM00216740/files/DM00216740.pdf/jcr:content/translations/en.DM00216740.pdf">SLA0044</a></td>
+<td style="text-align: left;"><a href="./Projects/NUCLEO-F401RE/Examples/53L3A2/53L3A2_SimpleRanging/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>53L5A1_MultiSensorRanging Example</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/87/0c/3d/ad/0a/ba/44/26/DM00216740/files/DM00216740.pdf/jcr:content/translations/en.DM00216740.pdf">SLA0044</a></td>
+<td style="text-align: left;"><a href="./Projects/NUCLEO-F401RE/Examples/53L5A1/53L5A1_MultiSensorRanging/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>53L5A1_SimpleRanging Example</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/87/0c/3d/ad/0a/ba/44/26/DM00216740/files/DM00216740.pdf/jcr:content/translations/en.DM00216740.pdf">SLA0044</a></td>
+<td style="text-align: left;"><a href="./Projects/NUCLEO-F401RE/Examples/53L5A1/53L5A1_SimpleRanging/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>53L5A1_ThresholdDetection Example</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/87/0c/3d/ad/0a/ba/44/26/DM00216740/files/DM00216740.pdf/jcr:content/translations/en.DM00216740.pdf">SLA0044</a></td>
+<td style="text-align: left;"><a href="./Projects/NUCLEO-F401RE/Examples/53L5A1/53L5A1_ThresholdDetection/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L3CX_SimpleRanging Example</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-update"></span></td>
+<td style="text-align: left;"><a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/87/0c/3d/ad/0a/ba/44/26/DM00216740/files/DM00216740.pdf/jcr:content/translations/en.DM00216740.pdf">SLA0044</a></td>
+<td style="text-align: left;"><a href="./Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L3CX_SimpleRanging/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>VL53L5CX_SimpleRanging Example</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://www.st.com/content/ccc/resource/legal/legal_agreement/license_agreement/group0/87/0c/3d/ad/0a/ba/44/26/DM00216740/files/DM00216740.pdf/jcr:content/translations/en.DM00216740.pdf">SLA0044</a></td>
+<td style="text-align: left;"><a href="./Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L5CX_SimpleRanging/Release_notes.html">release note URL</a></td>
+</tr>
+</tbody>
+</table>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations-4">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">The 53L3A2_MultiSensorRanging sample application doesn’t support multi target detection</td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers-4">Development toolchains and compilers</h2>
+<ul>
+<li>IAR System Workbench V8.50.9</li>
+<li>ARM Keil V5.32</li>
+<li>STM32CubeIDE v1.6.1</li>
+</ul>
+<h2 id="supported-devices-and-boards-4">Supported devices and boards</h2>
+<ul>
+<li>NUCLEO-F401RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>VL53L3CX / X-NUCLEO-53L3A2 / VL53L3CX-SATEL</li>
+<li>VL53L5CX / X-NUCLEO-53L5A1 / VL53L5CX-SATEL</li>
+</ul>
+<h2 id="backward-compatibility-4">Backward compatibility</h2>
+<p>N/A</p>
+<h2 id="dependencies-4">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL F4 V1.7.12</li>
+<li>STM32CubeHAL L4 V1.13.0</li>
+</ul>
+</div>
+</div>
+<div class="collapse">
+<input type="checkbox" id="collapse-section1" aria-hidden="true"> <label for="collapse-section1" aria-hidden="true"><strong>V1.0.0 / March 15th 2021</strong></label>
+<div>
+<h2 id="main-changes-5">Main changes</h2>
+<h3 id="first-release">First release</h3>
+<p>This is the first release of the <strong>X-CUBE-TOF1</strong>. This release supports the <strong>X-NUCLEO-53L3A2</strong> and the <strong>VL53L3CX</strong> sensors embedded on it through the BSP ranging sensor class. The <strong>VL53L3CX-SATEL</strong> board part is also supported through the custom ranging sensor class.</p>
+<h2 id="contents-5">Contents</h2>
+<p><small>The components flagged by “<span class="icon-st-update"></span>” have changed since the previous release. “<span class="icon-st-add"></span>” are new.</small></p>
+<p>Components</p>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Version</th>
+<th style="text-align: left;">License</th>
+<th style="text-align: left;">Release note</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>X-NUCLEO-53L3A2 BSP Driver</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/53L3A2/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>VL53L3CX BSP Component</strong></td>
+<td style="text-align: left;">V1.0.0<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="https://opensource.org/licenses/BSD-3-Clause">BSD 3-Clause</a></td>
+<td style="text-align: left;"><a href="./Drivers/BSP/Components/vl53l3cx/Release_notes.html">release note URL</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>VL53LX Driver</strong></td>
+<td style="text-align: left;">V1.2.3<span class="icon-st-add"></span></td>
+<td style="text-align: left;"><a href="http://www.st.com/SLA0081">SLA0081</a></td>
+<td style="text-align: left;"><a href=".\Release_Notes.html">release note URL</a></td>
+</tr>
+</tbody>
+</table>
+<p>Note: in the table above, components <strong>highlighted</strong> have changed since previous release.</p>
+<h2 id="known-limitations-5">Known Limitations</h2>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Headline</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">No known limitations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="development-toolchains-and-compilers-5">Development toolchains and compilers</h2>
+<ul>
+<li>IAR System Workbench V8.50.5</li>
+<li>ARM Keil V5.31</li>
+<li>STM32CubeIDE v1.6.0</li>
+</ul>
+<h2 id="supported-devices-and-boards-5">Supported devices and boards</h2>
+<ul>
+<li>NUCLEO-F401RE MB1136 rev.C</li>
+<li>NUCLEO-L476RG MB1136 rev.C</li>
+<li>X-NUCLEO-53L3A2</li>
+<li>VL53L3CX-SATEL</li>
+</ul>
+<h2 id="backward-compatibility-5">Backward compatibility</h2>
+<p>N/A</p>
+<h2 id="dependencies-5">Dependencies</h2>
+<p>This software release is compatible with:</p>
+<ul>
+<li>STM32CubeHAL F4 V1.7.11</li>
+<li>STM32CubeHAL L4 V1.13.0</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<footer class="sticky">
+<div class="columns">
+<div class="column" style="width:95%;">
+<p>For complete documentation on <strong>STM32Cube Expansion Packages</strong> , visit: <a href="https://www.st.com/en/embedded-software/stm32cube-expansion-packages.html">STM32Cube Expansion Packages</a></p>
+</div><div class="column" style="width:5%;">
+<p><abbr title="Based on template cx566953 version 2.0">Info</abbr></p>
+</div>
+</div>
+</footer>
+</body>
+</html>

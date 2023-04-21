@@ -1,0 +1,1382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<IP xmlns="http://mcd.rou.st.com/modules.php?name=mcu" xmlns:ns0="http://www.w3.org/2001/XMLSchema-instance" CodeTemplate="app_x-cube-tof1_h.ftl;app_x-cube-tof1_c.ftl" DBVersion="V4.0" Name="X-CUBE-TOF1" RootFolder="Packs/STMicroelectronics/X-CUBE-TOF1/3.3.0/" Version="3.3.0" ns0:schemaLocation="http://mcd.rou.st.com/modules.php?name=mcu ../../../../../../../doc/V4/Development/Specifications/db/thirdPartyDb.xsd">
+    <RefConfig Name="BoardOoExtensionJj53L3A2">
+        <Component Name="BoardOoExtension:53L3A2:$BoardOoExtensionJj53L3A2"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoExtensionJj53L5A1">
+        <Component Name="BoardOoExtension:53L5A1:$BoardOoExtensionJj53L5A1"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoExtensionJj53L7A1">
+        <Component Name="BoardOoExtension:53L7A1:$BoardOoExtensionJj53L7A1"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoExtensionJj53L8A1">
+        <Component Name="BoardOoExtension:53L8A1:$BoardOoExtensionJj53L8A1"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoExtensionJj53L1A2">
+        <Component Name="BoardOoExtension:53L1A2:$BoardOoExtensionJj53L1A2"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoExtensionJj53L4A2">
+        <Component Name="BoardOoExtension:53L4A2:$BoardOoExtensionJj53L4A2"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoExtensionJj53L4A1">
+        <Component Name="BoardOoExtension:53L4A1:$BoardOoExtensionJj53L4A1"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoPartJjRanging">
+        <Component Name="BoardOoPart:Ranging:VL53L3CX:$BoardOoPartJjRangingJjVL53L3CX"/>
+        <Component Name="BoardOoPart:Ranging:VL53L5CX:$BoardOoPartJjRangingJjVL53L5CX"/>
+        <Component Name="BoardOoPart:Ranging:VL53L7CX:$BoardOoPartJjRangingJjVL53L7CX"/>
+        <Component Name="BoardOoPart:Ranging:VL53L8CX:$BoardOoPartJjRangingJjVL53L8CX"/>
+        <Component Name="BoardOoPart:Ranging:VL53L1CB:$BoardOoPartJjRangingJjVL53L1CB"/>
+        <Component Name="BoardOoPart:Ranging:VL53L4CX:$BoardOoPartJjRangingJjVL53L4CX"/>
+        <Component Name="BoardOoPart:Ranging:VL53L4CD:$BoardOoPartJjRangingJjVL53L4CD"/>
+    </RefConfig>
+    <RefConfig Name="DeviceJjTOF1IiApplications">
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L4A1IiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L4A1IiMultiSensorRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L4A1IiThresholdDetection:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:VL53L4CDIiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L4A2IiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L4A2IiMultiSensorRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:VL53L4CXIiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L3A2IiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L3A2IiMultiSensorRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:VL53L3CXIiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L5A1IiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L5A1IiMultiSensorRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L5A1IiThresholdDetection:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:VL53L5CXIiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L7A1IiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L7A1IiMultiSensorRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L7A1IiThresholdDetection:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:VL53L7CXIiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L8A1IiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L8A1IiThresholdDetection:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:VL53L8CXIiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L1A2IiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:53L1A2IiMultiSensorRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <Component Name="TOF1IiApplicationsCcDevice:Application:VL53L1CBIiSimpleRanging:$TOF1IiApplicationsCcDeviceJjApplication"/>
+        <ConfigFile Name="53L3A2_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L3A2_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L3A2_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L3A2_MULTI_SENSOR_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L3A2_MULTI_SENSOR_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L3A2_MULTI_SENSOR_RANGING_DEMO_GV"/>
+        <ConfigFile Name="VL53L3CX_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="VL53L3CX_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="VL53L3CX_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L4A2_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L4A2_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L4A2_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L4A2_MULTI_SENSOR_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L4A2_MULTI_SENSOR_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L4A2_MULTI_SENSOR_RANGING_DEMO_GV"/>
+        <ConfigFile Name="VL53L4CX_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="VL53L4CX_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="VL53L4CX_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L4A1_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L4A1_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L4A1_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L4A1_MULTI_SENSOR_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L4A1_MULTI_SENSOR_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L4A1_MULTI_SENSOR_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L4A1_THRESHOLD_DETECTION_DEMO_C"/>
+        <ConfigFile Name="53L4A1_THRESHOLD_DETECTION_DEMO_INIT_C"/>
+        <ConfigFile Name="53L4A1_THRESHOLD_DETECTION_DEMO_GV_C"/>
+        <ConfigFile Name="VL53L4CD_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="VL53L4CD_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="VL53L4CD_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L5A1_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L5A1_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L5A1_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L5A1_MULTI_SENSOR_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L5A1_MULTI_SENSOR_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L5A1_MULTI_SENSOR_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L5A1_THRESHOLD_DETECTION_DEMO_C"/>
+        <ConfigFile Name="53L5A1_THRESHOLD_DETECTION_DEMO_INIT_C"/>
+        <ConfigFile Name="53L5A1_THRESHOLD_DETECTION_DEMO_GV_C"/>
+        <ConfigFile Name="VL53L5CX_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="VL53L5CX_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="VL53L5CX_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L7A1_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L7A1_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L7A1_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L7A1_MULTI_SENSOR_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L7A1_MULTI_SENSOR_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L7A1_MULTI_SENSOR_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L7A1_THRESHOLD_DETECTION_DEMO_C"/>
+        <ConfigFile Name="53L7A1_THRESHOLD_DETECTION_DEMO_INIT_C"/>
+        <ConfigFile Name="53L7A1_THRESHOLD_DETECTION_DEMO_GV_C"/>
+        <ConfigFile Name="VL53L7CX_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="VL53L7CX_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="VL53L7CX_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L8A1_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L8A1_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L8A1_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L8A1_THRESHOLD_DETECTION_DEMO_C"/>
+        <ConfigFile Name="53L8A1_THRESHOLD_DETECTION_DEMO_INIT_C"/>
+        <ConfigFile Name="53L8A1_THRESHOLD_DETECTION_DEMO_GV_C"/>
+        <ConfigFile Name="VL53L8CX_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="VL53L8CX_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="VL53L8CX_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L1A2_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L1A2_SIMPLE_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="53L1A2_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L1A2_MULTI_SENSOR_RANGING_DEMO_C"/>
+        <ConfigFile Name="53L1A2_MULTI_SENSOR_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="53L1A2_MULTI_SENSOR_RANGING_DEMO_INIT_C"/>
+        <ConfigFile Name="VL53L1CB_SIMPLE_RANGING_DEMO_C"/>
+        <ConfigFile Name="VL53L1CB_SIMPLE_RANGING_DEMO_GV_C"/>
+        <ConfigFile Name="VL53L1CB_SIMPLE_RANGING_DEMO_INIT_C"/>
+    </RefConfig>
+    <RefConfig Name="BoardOoSupportJjSTM32CubeIiCustomIiBSPIiDrivers">
+        <Component Name="STM32CubeIiCustomIiBSPIiDriversCcBoardOoSupport:Custom:RANGINGIiSENSOR:$STM32CubeIiCustomIiBSPIiDriversCcBoardOoSupportJjCustomJjRANGINGIiSENSOR"/>
+        <ConfigFile Name="CUSTOM_RANGING_SENSOR_H"/>
+        <ConfigFile Name="CUSTOM_MOTION_SENSOR_C"/>
+        <ConfigFile Name="RANGING_SENSOR_H"/>
+        <ConfigFile Name="CUSTOM_TOF_CONF_H"/>
+    </RefConfig>
+    <RefConfigFile Name="RTE_Component" Template="RTE_Components.ftl">
+        <File Category="header" Condition="all" Name="./RTE_Components.h"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L3A2 Simple Ranging sample application" Name="53L3A2_SIMPLE_RANGING_DEMO_C" Template="53l3a2_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L3A2IiSimpleRanging" Name="./53l3a2_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_OFFSET_CALIBRATION" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_XTALK_CALIBRATION" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L3A2 Simple Ranging sample application" Name="53L3A2_SIMPLE_RANGING_DEMO_INIT_C" Template="53l3a2_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L3A2IiSimpleRanging" Name="./53l3a2_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53l3a2 Simple Ranging sample application" Name="53L3A2_SIMPLE_RANGING_DEMO_GV_C" Template="53l3a2_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L3A2IiSimpleRanging" Name="./53l3a2_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L3A2 MultiSensorRanging sample application" Name="53L3A2_MULTI_SENSOR_RANGING_DEMO_C" Template="53l3a2_multi_sensor_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L3A2IiMultiSensorRanging" Name="./53l3a2_multi_sensor_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L3A2 MultiSensorRanging sample application" Name="53L3A2_MULTI_SENSOR_RANGING_DEMO_INIT_C" Template="53l3a2_multi_sensor_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L3A2IiMultiSensorRanging" Name="./53l3a2_multi_sensor_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L3A2 MultiSensorRanging sample application" Name="53L3A2_MULTI_SENSOR_RANGING_DEMO_GV" Template="53l3a2_multi_sensor_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L3A2IiMultiSensorRanging" Name="./53l3a2_multi_sensor_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L3CX simple ranging sample application" Name="VL53L3CX_SIMPLE_RANGING_DEMO_C" Template="vl53l3cx_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L3CXIiSimpleRanging" Name="./vl53l3cx_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L3CX simple ranging sample application" Name="VL53L3CX_SIMPLE_RANGING_DEMO_INIT_C" Template="vl53l3cx_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L3CXIiSimpleRanging" Name="./vl53l3cx_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L3CX simple ranging sample application" Name="VL53L3CX_SIMPLE_RANGING_DEMO_GV_C" Template="vl53l3cx_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L3CXIiSimpleRanging" Name="./vl53l3cx_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A2 Simple Ranging sample application" Name="53L4A2_SIMPLE_RANGING_DEMO_C" Template="53l4a2_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A2IiSimpleRanging" Name="./53l4a2_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_OFFSET_CALIBRATION" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_XTALK_CALIBRATION" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A2 Simple Ranging sample application" Name="53L4A2_SIMPLE_RANGING_DEMO_INIT_C" Template="53l4a2_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A2IiSimpleRanging" Name="./53l4a2_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53l4a2 Simple Ranging sample application" Name="53L4A2_SIMPLE_RANGING_DEMO_GV_C" Template="53l4a2_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A2IiSimpleRanging" Name="./53l4a2_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A2 MultiSensorRanging sample application" Name="53L4A2_MULTI_SENSOR_RANGING_DEMO_C" Template="53l4a2_multi_sensor_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A2IiMultiSensorRanging" Name="./53l4a2_multi_sensor_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A2 MultiSensorRanging sample application" Name="53L4A2_MULTI_SENSOR_RANGING_DEMO_INIT_C" Template="53l4a2_multi_sensor_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A2IiMultiSensorRanging" Name="./53l4a2_multi_sensor_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A2 MultiSensorRanging sample application" Name="53L4A2_MULTI_SENSOR_RANGING_DEMO_GV" Template="53l4a2_multi_sensor_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A2IiMultiSensorRanging" Name="./53l4a2_multi_sensor_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L4CX simple ranging sample application" Name="VL53L4CX_SIMPLE_RANGING_DEMO_C" Template="vl53l4cx_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L4CXIiSimpleRanging" Name="./vl53l4cx_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L4CX simple ranging sample application" Name="VL53L4CX_SIMPLE_RANGING_DEMO_INIT_C" Template="vl53l4cx_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L4CXIiSimpleRanging" Name="./vl53l4cx_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L4CX simple ranging sample application" Name="VL53L4CX_SIMPLE_RANGING_DEMO_GV_C" Template="vl53l4cx_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L4CXIiSimpleRanging" Name="./vl53l4cx_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 Simple Ranging sample application" Name="53L4A1_SIMPLE_RANGING_DEMO_C" Template="53l4a1_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiSimpleRanging" Name="./53l4a1_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_OFFSET_CALIBRATION" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_XTALK_CALIBRATION" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 Simple Ranging sample application" Name="53L4A1_SIMPLE_RANGING_DEMO_INIT_C" Template="53l4a1_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiSimpleRanging" Name="./53l4a1_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 Simple Ranging sample application" Name="53L4A1_SIMPLE_RANGING_DEMO_GV_C" Template="53l4a1_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiSimpleRanging" Name="./53l4a1_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 MultiSensorRanging sample application" Name="53L4A1_MULTI_SENSOR_RANGING_DEMO_C" Template="53l4a1_multi_sensor_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiMultiSensorRanging" Name="./53l4a1_multi_sensor_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 MultiSensorRanging sample application" Name="53L4A1_MULTI_SENSOR_RANGING_DEMO_INIT_C" Template="53l4a1_multi_sensor_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiMultiSensorRanging" Name="./53l4a1_multi_sensor_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 MultiSensorRanging sample application" Name="53L4A1_MULTI_SENSOR_RANGING_DEMO_GV_C" Template="53l4a1_multi_sensor_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiMultiSensorRanging" Name="./53l4a1_multi_sensor_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 Threshold Detection sample application" Name="53L4A1_THRESHOLD_DETECTION_DEMO_C" Template="53l4a1_threshold_detection_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiThresholdDetection" Name="./53l4a1_threshold_detection_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 Threshold Detection sample application" Name="53L4A1_THRESHOLD_DETECTION_DEMO_INIT_C" Template="53l4a1_threshold_detection_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiThresholdDetection" Name="./53l4a1_threshold_detection_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L4A1 Threshold Detection sample application" Name="53L4A1_THRESHOLD_DETECTION_DEMO_GV_C" Template="53l4a1_threshold_detection_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L4A1IiThresholdDetection" Name="./53l4a1_threshold_detection_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L4CD simple ranging sample application" Name="VL53L4CD_SIMPLE_RANGING_DEMO_C" Template="vl53l4cd_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L4CDIiSimpleRanging" Name="./vl53l4cd_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L4CD simple ranging sample application" Name="VL53L4CD_SIMPLE_RANGING_DEMO_INIT_C" Template="vl53l4cd_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L4CDIiSimpleRanging" Name="./vl53l4cd_simple_ranging_demo_init.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L4CD simple ranging sample application" Name="VL53L4CD_SIMPLE_RANGING_DEMO_GV_C" Template="vl53l4cd_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L4CDIiSimpleRanging" Name="./vl53l4cd_simple_ranging_demo_gv.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 Simple Ranging sample application" Name="53L5A1_SIMPLE_RANGING_DEMO_C" Template="53l5a1_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiSimpleRanging" Name="./53l5a1_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_XTALK_CALIBRATION" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 Simple Ranging sample application" Name="53L5A1_SIMPLE_RANGING_DEMO_INIT_C" Template="53l5a1_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiSimpleRanging" Name="./53l5a1_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 Simple Ranging sample application" Name="53L5A1_SIMPLE_RANGING_DEMO_GV_C" Template="53l5a1_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiSimpleRanging" Name="./53l5a1_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 MultiSensorRanging sample application" Name="53L5A1_MULTI_SENSOR_RANGING_DEMO_C" Template="53l5a1_multi_sensor_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiMultiSensorRanging" Name="./53l5a1_multi_sensor_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 MultiSensorRanging sample application" Name="53L5A1_MULTI_SENSOR_RANGING_DEMO_INIT_C" Template="53l5a1_multi_sensor_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiMultiSensorRanging" Name="./53l5a1_multi_sensor_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 MultiSensorRanging sample application" Name="53L5A1_MULTI_SENSOR_RANGING_DEMO_GV_C" Template="53l5a1_multi_sensor_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiMultiSensorRanging" Name="./53l5a1_multi_sensor_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 Threshold Detection sample application" Name="53L5A1_THRESHOLD_DETECTION_DEMO_C" Template="53l5a1_threshold_detection_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiThresholdDetection" Name="./53l5a1_threshold_detection_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 Threshold Detection sample application" Name="53L5A1_THRESHOLD_DETECTION_DEMO_INIT_C" Template="53l5a1_threshold_detection_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiThresholdDetection" Name="./53l5a1_threshold_detection_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L5A1 Threshold Detection sample application" Name="53L5A1_THRESHOLD_DETECTION_DEMO_GV_C" Template="53l5a1_threshold_detection_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L5A1IiThresholdDetection" Name="./53l5a1_threshold_detection_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L5CX simple ranging sample application" Name="VL53L5CX_SIMPLE_RANGING_DEMO_C" Template="vl53l5cx_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L5CXIiSimpleRanging" Name="./vl53l5cx_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L5CX simple ranging sample application" Name="VL53L5CX_SIMPLE_RANGING_DEMO_INIT_C" Template="vl53l5cx_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L5CXIiSimpleRanging" Name="./vl53l5cx_simple_ranging_demo_init.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L5CX simple ranging sample application" Name="VL53L5CX_SIMPLE_RANGING_DEMO_GV_C" Template="vl53l5cx_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L5CXIiSimpleRanging" Name="./vl53l5cx_simple_ranging_demo_gv.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 Simple Ranging sample application" Name="53L7A1_SIMPLE_RANGING_DEMO_C" Template="53l7a1_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiSimpleRanging" Name="./53l7a1_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_XTALK_CALIBRATION" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 Simple Ranging sample application" Name="53L7A1_SIMPLE_RANGING_DEMO_INIT_C" Template="53l7a1_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiSimpleRanging" Name="./53l7a1_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 Simple Ranging sample application" Name="53L7A1_SIMPLE_RANGING_DEMO_GV_C" Template="53l7a1_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiSimpleRanging" Name="./53l7a1_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 MultiSensorRanging sample application" Name="53L7A1_MULTI_SENSOR_RANGING_DEMO_C" Template="53l7a1_multi_sensor_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiMultiSensorRanging" Name="./53l7a1_multi_sensor_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 MultiSensorRanging sample application" Name="53L7A1_MULTI_SENSOR_RANGING_DEMO_INIT_C" Template="53l7a1_multi_sensor_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiMultiSensorRanging" Name="./53l7a1_multi_sensor_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 MultiSensorRanging sample application" Name="53L7A1_MULTI_SENSOR_RANGING_DEMO_GV_C" Template="53l7a1_multi_sensor_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiMultiSensorRanging" Name="./53l7a1_multi_sensor_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 Threshold Detection sample application" Name="53L7A1_THRESHOLD_DETECTION_DEMO_C" Template="53l7a1_threshold_detection_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiThresholdDetection" Name="./53l7a1_threshold_detection_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 Threshold Detection sample application" Name="53L7A1_THRESHOLD_DETECTION_DEMO_INIT_C" Template="53l7a1_threshold_detection_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiThresholdDetection" Name="./53l7a1_threshold_detection_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L7A1 Threshold Detection sample application" Name="53L7A1_THRESHOLD_DETECTION_DEMO_GV_C" Template="53l7a1_threshold_detection_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L7A1IiThresholdDetection" Name="./53l7a1_threshold_detection_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L7CX simple ranging sample application" Name="VL53L7CX_SIMPLE_RANGING_DEMO_C" Template="vl53l7cx_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L7CXIiSimpleRanging" Name="./vl53l7cx_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L7CX simple ranging sample application" Name="VL53L7CX_SIMPLE_RANGING_DEMO_INIT_C" Template="vl53l7cx_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L7CXIiSimpleRanging" Name="./vl53l7cx_simple_ranging_demo_init.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L7CX simple ranging sample application" Name="VL53L7CX_SIMPLE_RANGING_DEMO_GV_C" Template="vl53l7cx_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L7CXIiSimpleRanging" Name="./vl53l7cx_simple_ranging_demo_gv.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L8A1 Simple Ranging sample application" Name="53L8A1_SIMPLE_RANGING_DEMO_C" Template="53l8a1_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L8A1IiSimpleRanging" Name="./53l8a1_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_XTALK_CALIBRATION" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L8A1 Simple Ranging sample application" Name="53L8A1_SIMPLE_RANGING_DEMO_INIT_C" Template="53l8a1_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L8A1IiSimpleRanging" Name="./53l8a1_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L8A1 Simple Ranging sample application" Name="53L8A1_SIMPLE_RANGING_DEMO_GV_C" Template="53l8a1_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L8A1IiSimpleRanging" Name="./53l8a1_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L8A1 Threshold Detection sample application" Name="53L8A1_THRESHOLD_DETECTION_DEMO_C" Template="53l8a1_threshold_detection_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L8A1IiThresholdDetection" Name="./53l8a1_threshold_detection_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L8A1 Threshold Detection sample application" Name="53L8A1_THRESHOLD_DETECTION_DEMO_INIT_C" Template="53l8a1_threshold_detection_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L8A1IiThresholdDetection" Name="./53l8a1_threshold_detection_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L8A1 Threshold Detection sample application" Name="53L8A1_THRESHOLD_DETECTION_DEMO_GV_C" Template="53l8a1_threshold_detection_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L8A1IiThresholdDetection" Name="./53l8a1_threshold_detection_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L8CX simple ranging sample application" Name="VL53L8CX_SIMPLE_RANGING_DEMO_C" Template="vl53l8cx_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L8CXIiSimpleRanging" Name="./vl53l8cx_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L8CX simple ranging sample application" Name="VL53L8CX_SIMPLE_RANGING_DEMO_INIT_C" Template="vl53l8cx_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L8CXIiSimpleRanging" Name="./vl53l8cx_simple_ranging_demo_init.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L8CX simple ranging sample application" Name="VL53L8CX_SIMPLE_RANGING_DEMO_GV_C" Template="vl53l8cx_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L8CXIiSimpleRanging" Name="./vl53l8cx_simple_ranging_demo_gv.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L1A2 Simple Ranging sample application" Name="53L1A2_SIMPLE_RANGING_DEMO_C" Template="53l1a2_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L1A2IiSimpleRanging" Name="./53l1a2_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_OFFSET_CALIBRATION" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_XTALK_CALIBRATION" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L1A2 Simple Ranging sample application" Name="53L1A2_SIMPLE_RANGING_DEMO_INIT_C" Template="53l1a2_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L1A2IiSimpleRanging" Name="./53l1a2_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L1A2 Simple Ranging sample application" Name="53L1A2_SIMPLE_RANGING_DEMO_GV_C" Template="53l1a2_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L1A2IiSimpleRanging" Name="./53l1a2_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L1A2 MultiSensorRanging sample application" Name="53L1A2_MULTI_SENSOR_RANGING_DEMO_C" Template="53l1a2_multi_sensor_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L1A2IiMultiSensorRanging" Name="./53l1a2_multi_sensor_demo.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L1A2 MultiSensorRanging sample application" Name="53L1A2_MULTI_SENSOR_RANGING_DEMO_GV_C" Template="53l1a2_multi_sensor_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L1A2IiMultiSensorRanging" Name="./53l1a2_multi_sensor_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for 53L1A2 MultiSensorRanging sample application" Name="53L1A2_MULTI_SENSOR_RANGING_DEMO_INIT_C" Template="53l1a2_multi_sensor_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJj53L1A2IiMultiSensorRanging" Name="./53l1a2_multi_sensor_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L1CB simple ranging sample application" Name="VL53L1CB_SIMPLE_RANGING_DEMO_C" Template="vl53l1cb_simple_ranging_demo_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L1CBIiSimpleRanging" Name="./vl53l1cb_simple_ranging_demo.tmp"/>
+        <Argument Added="true" AddressOf="false" GenericType="simple" Name="TOF_RANGING_MODE" OptimizationCondition="equal"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L1CB simple ranging sample application" Name="VL53L1CB_SIMPLE_RANGING_DEMO_GV_C" Template="vl53l1cb_simple_ranging_demo_gv_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L1CBIiSimpleRanging" Name="./vl53l1cb_simple_ranging_demo_gv.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source for VL53L1CB simple ranging sample application" Name="VL53L1CB_SIMPLE_RANGING_DEMO_INIT_C" Template="vl53l1cb_simple_ranging_demo_init_c.ftl">
+        <File Category="source" Condition="SEMTOF1IiApplicationsCcDeviceJjApplicationJjVL53L1CBIiSimpleRanging" Name="./vl53l1cb_simple_ranging_demo_init.tmp"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Header file for BSP Ranging Sensor" Name="CUSTOM_RANGING_SENSOR_H" Template="custom_ranging_sensor_h.ftl">
+        <File Category="header" Condition="SEMSTM32CubeIiCustomIiBSPIiDriversCcBoardOoSupportJjCustomJjRANGINGIiSENSOR" Name="Target/custom_ranging_sensor.h"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Source file for BSP Ranging Sensor" Name="CUSTOM_MOTION_SENSOR_C" Template="custom_ranging_sensor_c.ftl">
+        <File Category="source" Condition="SEMSTM32CubeIiCustomIiBSPIiDriversCcBoardOoSupportJjCustomJjRANGINGIiSENSOR" Name="Target/custom_ranging_sensor.c"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Header file for BSP Ranging Sensor Class" Name="RANGING_SENSOR_H" Template="ranging_sensor_h.ftl">
+        <File Category="header" Condition="SEMSTM32CubeIiCustomIiBSPIiDriversCcBoardOoSupportJjCustomJjRANGINGIiSENSOR" Name="Target/ranging_sensor.h"/>
+    </RefConfigFile>
+    <RefConfigFile Added="true" Description="Header file for configuration of BSP Ranging Sensor class" Name="CUSTOM_TOF_CONF_H" Template="custom_tof_conf_h.ftl">
+        <File Category="header" Condition="SEMSTM32CubeIiCustomIiBSPIiDriversCcBoardOoSupportJjCustomJjRANGINGIiSENSOR" Name="Target/custom_tof_conf.h"/>
+    </RefConfigFile>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="53L3A2 BUS IO driver">
+        <File Category="template" Condition="all" Name="./53l3a2_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="EXTI" Name="TOF_INT_PIN">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_c.ftl"/>
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="53L5A1 BUS IO driver">
+        <File Category="template" Condition="all" Name="./53l5a1_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_PWR_EN_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_PWR_EN_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_PWR_EN_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_LPn_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_LPn_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_LPn_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_I2C_RST_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_I2C_RST_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L5A1_I2C_RST_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="53L7A1 BUS IO driver">
+        <File Category="template" Condition="all" Name="./53l7a1_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_PWR_EN_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_PWR_EN_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_PWR_EN_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_LPn_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_LPn_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_LPn_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_I2C_RST_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_I2C_RST_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L7A1_I2C_RST_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="53L8A1 BUS IO driver">
+        <File Category="template" Condition="all" Name="./53l8a1_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L8A1_PWR_EN_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L8A1_LPn_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L8A1_I2C_RST_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="53L1A2 BUS IO driver">
+        <File Category="template" Condition="all" Name="./53l1a2_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="53L4A2 BUS IO driver">
+        <File Category="template" Condition="all" Name="./53l4a2_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L4A2_XSHUT_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L4A2_XSHUT_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L4A2_XSHUT_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="53L4A1 BUS IO driver">
+        <File Category="template" Condition="all" Name="./53l4a1_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L4A1_XSHUT_C">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L4A1_XSHUT_L">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="53L4A1_XSHUT_R">
+        <File Category="template" Condition="all" Name="./app_tof_pin_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="VL53L3CX BUS IO driver">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L3CX_XSHUT">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="VL53L4CX BUS IO driver">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L4CX_XSHUT">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="VL53L4CD BUS IO driver">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L4CD_XSHUT">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="VL53L5CX BUS IO driver">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L5CX_PWR_EN">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L5CX_I2C_RST">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L5CX_LPn">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="VL53L7CX BUS IO driver">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L7CX_PWR_EN">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L7CX_I2C_RST">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L7CX_LPn">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="VL53L8CX BUS IO driver">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L8CX_PWR_EN">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L8CX_I2C_RST">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L8CX_LPn">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="I2C" BspModeName="I2C" Name="VL53L1CB BUS IO driver">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="GPIO" BspModeName="Output" Name="VL53L1CB_XSHUT">
+        <File Category="template" Condition="all" Name="./custom_tof_conf_h.ftl"/>
+    </RefBspComponent>
+    <RefBspComponent BspIpName="USART" BspModeName="Asynchronous" Name="BSP USART"/>
+    <RefBspComponent BspIpName="GPIO" BspModeName="EXTI" Name="BSP BUTTON"/>
+    <RefComponent Cclass="BoardOoExtension" Cgroup="53L3A2" Cversion="2Gg0Gg3">
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/Common/ranging_sensor.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L3A2/53l3a2.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L3A2/53l3a2.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L3A2/53l3a2_conf_template.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L3A2/53l3a2_ranging_sensor.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L3A2/53l3a2_ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L3A2/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L3A2/LICENSE.txt"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L3A2/Release_Notes.html"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L3A2/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L3A2/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L3A2/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L3A2/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L3A2/_htmresc/Update.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/LICENSE.txt"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/LXReleaseNotes.txt"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api.c"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/VL53LX_API.chm"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_calibration.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_calibration.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_debug.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_debug.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_preset_modes.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_preset_modes.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core_support.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core_support.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_def.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax_private_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_error_codes.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_error_exceptions.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen3.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen3.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen4.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen4.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_char.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_char.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_funcs.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_funcs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_private_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_ll_def.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_ll_device.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_debug.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_debug.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_preset_setup.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_funcs.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_funcs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_settings.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_structs.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_sigma_estimate.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_sigma_estimate.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_silicon_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_silicon_core.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_tuning_parm_defaults.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_wait.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_wait.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_xtalk.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_xtalk.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_xtalk_private_structs.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_init.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_ipp.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_ipp.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_ipp_imports.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_log.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_log.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_user_config.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_user_data.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_user_defines.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_types.h"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/Release_Notes.html"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/vl53l3cx.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/vl53l3cx.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/Update.svg"/>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoExtension" Cgroup="53L5A1" Cversion="1Gg0Gg5">
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/Common/ranging_sensor.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L5A1/53l5a1_ranging_sensor.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L5A1/53l5a1_ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L5A1/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L5A1/LICENSE.txt"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L5A1/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L5A1/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L5A1/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L5A1/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L5A1/_htmresc/Update.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l5cx/LICENSE.txt"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_api.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_api.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_buffers.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_detection_thresholds.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_detection_thresholds.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_motion_indicator.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_motion_indicator.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_xtalk.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_xtalk.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/porting/platform.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/porting/platform.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/vl53l5cx.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/vl53l5cx.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/Update.svg"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l5cx/Release_Notes.html"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L5A1/Release_Notes.html"/>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoExtension" Cgroup="53L7A1" Cversion="1Gg0Gg1">
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/Common/ranging_sensor.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L7A1/53l7a1_ranging_sensor.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L7A1/53l7a1_ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L7A1/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L7A1/LICENSE.txt"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L7A1/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L7A1/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L7A1/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L7A1/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L7A1/_htmresc/Update.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l7cx/LICENSE.txt"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_api.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_api.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_buffers.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_detection_thresholds.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_detection_thresholds.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_motion_indicator.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_motion_indicator.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_xtalk.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_xtalk.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/porting/platform.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/porting/platform.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/vl53l7cx.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/vl53l7cx.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/Update.svg"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L7A1/Release_Notes.html"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l7cx/Release_Notes.html"/>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoExtension" Cgroup="53L8A1" Cversion="1Gg0Gg0">
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/Common/ranging_sensor.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L8A1/53l8a1_ranging_sensor.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L8A1/53l8a1_ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L8A1/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L8A1/LICENSE.txt"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L8A1/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L8A1/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L8A1/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L8A1/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L8A1/_htmresc/Update.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l8cx/LICENSE.txt"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_api.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_api.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_buffers.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_detection_thresholds.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_detection_thresholds.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_motion_indicator.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_motion_indicator.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_xtalk.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_xtalk.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/porting/platform.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/porting/platform.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/vl53l8cx.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/vl53l8cx.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/Update.svg"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L8A1/Release_Notes.html"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l8cx/Release_Notes.html"/>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoExtension" Cgroup="53L1A2" Cversion="1Gg0Gg2">
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/Common/ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/LICENSE.txt"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/ReleaseNotes.txt"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api.c"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/VL53L1_API.chm"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_calibration.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_calibration.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_debug.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_debug.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_preset_modes.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_preset_modes.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_strings.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_strings.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core_support.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core_support.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_def.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax_private_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_codes.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_exceptions.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_strings.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_strings.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen3.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen3.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen4.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen4.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_char.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_char.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_funcs.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_funcs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_private_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_ll_def.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_ll_device.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_debug.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_debug.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_preset_setup.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_funcs.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_funcs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_settings.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_structs.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_sigma_estimate.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_sigma_estimate.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_silicon_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_silicon_core.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_tuning_parm_defaults.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_wait.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_wait.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_xtalk.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_xtalk.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_xtalk_private_structs.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_zone_presets.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_zone_presets.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_init.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_ipp.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_ipp.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_log.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_log.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_user_config.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_user_data.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_user_defines.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_types.h"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/Release_Notes.html"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/vl53l1cb.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/vl53l1cb.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/Update.svg"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L1A2/53l1a2.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L1A2/53l1a2.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L1A2/53l1a2_conf_template.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L1A2/53l1a2_ranging_sensor.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L1A2/53l1a2_ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L1A2/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L1A2/LICENSE.txt"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L1A2/Release_Notes.html"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L1A2/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L1A2/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L1A2/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L1A2/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L1A2/_htmresc/Update.svg"/>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoExtension" Cgroup="53L4A2" Cversion="1Gg0Gg2">
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/Common/ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/LICENSE.txt"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/LXReleaseNotes.txt"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api.c"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/VL53LX_API.chm"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_calibration.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_calibration.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_debug.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_debug.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_preset_modes.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_preset_modes.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core_support.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core_support.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_def.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax_private_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_error_codes.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_error_exceptions.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen3.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen3.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen4.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen4.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_char.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_char.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_core.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_funcs.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_funcs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_private_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_ll_def.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_ll_device.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_debug.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_debug.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_structs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_preset_setup.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_funcs.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_funcs.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_map.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_settings.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_structs.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_sigma_estimate.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_sigma_estimate.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_silicon_core.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_silicon_core.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_tuning_parm_defaults.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_wait.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_wait.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_xtalk.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_xtalk.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_xtalk_private_structs.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_init.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_ipp.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_ipp.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_ipp_imports.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_log.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_log.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_user_config.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_user_data.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_user_defines.h"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_types.h"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/Release_Notes.html"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/vl53l4cx.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/vl53l4cx.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/Update.svg"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L4A2/53l4a2_conf_template.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L4A2/53l4a2_ranging_sensor.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L4A2/53l4a2_ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A2/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L4A2/LICENSE.txt"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L4A2/Release_Notes.html"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A2/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A2/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A2/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A2/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A2/_htmresc/Update.svg"/>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoExtension" Cgroup="53L4A1" Cversion="1Gg0Gg2">
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/Common/ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cd/LICENSE.txt"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_api.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_api.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_calibration.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_calibration.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/porting/platform.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/porting/platform.h"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cd/Release_Notes.html"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/vl53l4cd.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/vl53l4cd.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/Update.svg"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L4A1/53l4a1_conf_template.h"/>
+        <File Category="source" Condition="" Name="Drivers/BSP/53L4A1/53l4a1_ranging_sensor.c"/>
+        <File Category="header" Condition="" Name="Drivers/BSP/53L4A1/53l4a1_ranging_sensor.h"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A1/LICENSE.md"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L4A1/LICENSE.txt"/>
+        <File Category="doc" Condition="" Name="Drivers/BSP/53L4A1/Release_Notes.html"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A1/_htmresc/Add button.svg"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A1/_htmresc/favicon.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A1/_htmresc/mini-st_2020.css"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A1/_htmresc/st_logo_2020.png"/>
+        <File Category="other" Condition="" Name="Drivers/BSP/53L4A1/_htmresc/Update.svg"/>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoPart" Cgroup="Ranging" Cversion="2Gg0Gg3">
+        <SubComponent Csub="VL53L3CX" Cvariant="true" Cversion="2Gg0Gg3">
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/LICENSE.md"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/LICENSE.txt"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/LXReleaseNotes.txt"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api.c"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/VL53LX_API.chm"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_calibration.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_calibration.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_debug.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_debug.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_preset_modes.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_api_preset_modes.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core_support.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_core_support.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_def.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax_private_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_dmax_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_error_codes.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_error_exceptions.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen3.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen3.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen4.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_algos_gen4.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_char.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_char.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_funcs.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_funcs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_private_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_hist_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_ll_def.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_ll_device.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_debug.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_debug.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_nvm_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_preset_setup.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_funcs.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_funcs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_settings.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_register_structs.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_sigma_estimate.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_sigma_estimate.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_silicon_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_silicon_core.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_tuning_parm_defaults.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_wait.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_wait.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_xtalk.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_xtalk.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/modules/vl53lx_xtalk_private_structs.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_init.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_ipp.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_ipp.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_ipp_imports.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_log.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_log.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_user_config.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_user_data.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_platform_user_defines.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/porting/vl53lx_types.h"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l3cx/Release_Notes.html"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l3cx/vl53l3cx.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l3cx/vl53l3cx.h"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/Add button.svg"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/favicon.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/mini-st_2020.css"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/st_logo_2020.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l3cx/_htmresc/Update.svg"/>
+        </SubComponent>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoPart" Cgroup="Ranging" Cversion="1Gg0Gg4">
+        <SubComponent Csub="VL53L5CX" Cvariant="true" Cversion="1Gg0Gg4">
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/LICENSE.md"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l5cx/LICENSE.txt"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_api.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_api.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_buffers.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_detection_thresholds.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_detection_thresholds.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_motion_indicator.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_motion_indicator.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_xtalk.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/modules/vl53l5cx_plugin_xtalk.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/porting/platform.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/porting/platform.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l5cx/vl53l5cx.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l5cx/vl53l5cx.h"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/Add button.svg"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/favicon.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/mini-st_2020.css"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/st_logo_2020.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l5cx/_htmresc/Update.svg"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l5cx/Release_Notes.html"/>
+        </SubComponent>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoPart" Cgroup="Ranging" Cversion="1Gg0Gg1">
+        <SubComponent Csub="VL53L7CX" Cvariant="true" Cversion="1Gg0Gg1">
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/LICENSE.md"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l7cx/LICENSE.txt"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_api.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_api.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_buffers.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_detection_thresholds.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_detection_thresholds.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_motion_indicator.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_motion_indicator.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_xtalk.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/modules/vl53l7cx_plugin_xtalk.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/porting/platform.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/porting/platform.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l7cx/vl53l7cx.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l7cx/vl53l7cx.h"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/Add button.svg"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/favicon.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/mini-st_2020.css"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/st_logo_2020.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l7cx/_htmresc/Update.svg"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l7cx/Release_Notes.html"/>
+        </SubComponent>
+        <SubComponent Csub="VL53L4CX" Cvariant="true" Cversion="1Gg0Gg1">
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/LXReleaseNotes.txt"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api.c"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/VL53LX_API.chm"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_calibration.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_calibration.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_debug.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_debug.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_preset_modes.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_api_preset_modes.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core_support.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_core_support.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_def.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax_private_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_dmax_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_error_codes.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_error_exceptions.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen3.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen3.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen4.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_algos_gen4.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_char.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_char.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_funcs.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_funcs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_private_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_hist_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_ll_def.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_ll_device.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_debug.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_debug.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_nvm_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_preset_setup.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_funcs.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_funcs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_settings.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_register_structs.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_sigma_estimate.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_sigma_estimate.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_silicon_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_silicon_core.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_tuning_parm_defaults.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_wait.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_wait.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_xtalk.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_xtalk.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/modules/vl53lx_xtalk_private_structs.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_init.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_ipp.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_ipp.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_ipp_imports.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_log.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_log.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_user_config.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_user_data.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_platform_user_defines.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/porting/vl53lx_types.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cx/vl53l4cx.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cx/vl53l4cx.h"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/LICENSE.md"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/LICENSE.txt"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cx/Release_Notes.html"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/Add button.svg"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/favicon.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/mini-st_2020.css"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/st_logo_2020.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cx/_htmresc/Update.svg"/>
+        </SubComponent>
+        <SubComponent Csub="VL53L4CD" Cvariant="true" Cversion="1Gg0Gg1">
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/LICENSE.md"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cd/LICENSE.txt"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_api.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_api.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_calibration.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/modules/vl53l4cd_calibration.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/porting/platform.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/porting/platform.h"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l4cd/Release_Notes.html"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l4cd/vl53l4cd.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l4cd/vl53l4cd.h"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/Add button.svg"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/favicon.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/mini-st_2020.css"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/st_logo_2020.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l4cd/_htmresc/Update.svg"/>
+        </SubComponent>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoPart" Cgroup="Ranging" Cversion="1Gg0Gg0">
+        <SubComponent Csub="VL53L8CX" Cvariant="true" Cversion="1Gg0Gg0">
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/LICENSE.md"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l8cx/LICENSE.txt"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_api.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_api.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_buffers.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_detection_thresholds.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_detection_thresholds.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_motion_indicator.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_motion_indicator.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_xtalk.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/modules/vl53l8cx_plugin_xtalk.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/porting/platform.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/porting/platform.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l8cx/vl53l8cx.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l8cx/vl53l8cx.h"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/Add button.svg"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/favicon.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/mini-st_2020.css"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/st_logo_2020.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l8cx/_htmresc/Update.svg"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l8cx/Release_Notes.html"/>
+        </SubComponent>
+    </RefComponent>
+    <RefComponent Cclass="BoardOoPart" Cgroup="Ranging" Cversion="1Gg0Gg2">
+        <SubComponent Csub="VL53L1CB" Cvariant="true" Cversion="1Gg0Gg2">
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/LICENSE.md"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/LICENSE.txt"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/ReleaseNotes.txt"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api.c"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/VL53L1_API.chm"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_calibration.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_calibration.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_debug.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_debug.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_preset_modes.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_preset_modes.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_strings.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_api_strings.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core_support.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_core_support.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_def.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax_private_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_dmax_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_codes.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_exceptions.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_strings.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_error_strings.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen3.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen3.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen4.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_algos_gen4.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_char.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_char.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_core.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_funcs.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_funcs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_private_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_hist_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_ll_def.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_ll_device.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_debug.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_debug.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_nvm_structs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_preset_setup.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_funcs.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_funcs.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_map.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_settings.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_register_structs.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_sigma_estimate.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_sigma_estimate.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_silicon_core.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_silicon_core.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_tuning_parm_defaults.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_wait.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_wait.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_xtalk.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_xtalk.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_xtalk_private_structs.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_zone_presets.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/modules/vl53l1_zone_presets.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_init.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_ipp.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_ipp.h"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_log.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_log.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_user_config.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_user_data.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_platform_user_defines.h"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/porting/vl53l1_types.h"/>
+            <File Category="doc" Condition="" Name="Drivers/BSP/Components/vl53l1cb/Release_Notes.html"/>
+            <File Category="source" Condition="" Name="Drivers/BSP/Components/vl53l1cb/vl53l1cb.c"/>
+            <File Category="header" Condition="" Name="Drivers/BSP/Components/vl53l1cb/vl53l1cb.h"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/Add button.svg"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/favicon.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/mini-st_2020.css"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/st_logo_2020.png"/>
+            <File Category="other" Condition="" Name="Drivers/BSP/Components/vl53l1cb/_htmresc/Update.svg"/>
+        </SubComponent>
+    </RefComponent>
+    <RefComponent Cclass="TOF1IiApplicationsCcDevice" Cgroup="Application" Cversion="1Gg0Gg0">
+        <SubComponent Csub="" Cvariant="VL53L1CBIiSimpleRanging:VL53L1CBIiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L1A2IiMultiSensorRanging:53L1A2IiMultiSensorRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L1A2IiSimpleRanging:53L1A2IiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="VL53L8CXIiSimpleRanging:VL53L8CXIiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L8A1IiThresholdDetection:53L8A1IiThresholdDetection" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L8A1IiSimpleRanging:53L8A1IiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="VL53L7CXIiSimpleRanging:VL53L7CXIiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L7A1IiThresholdDetection:53L7A1IiThresholdDetection" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L7A1IiMultiSensorRanging:53L7A1IiMultiSensorRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L7A1IiSimpleRanging:53L7A1IiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="VL53L5CXIiSimpleRanging:VL53L5CXIiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L5A1IiThresholdDetection:53L5A1IiThresholdDetection" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L5A1IiMultiSensorRanging:53L5A1IiMultiSensorRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L5A1IiSimpleRanging:53L5A1IiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="VL53L3CXIiSimpleRanging:VL53L3CXIiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L3A2IiMultiSensorRanging:53L3A2IiMultiSensorRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L3A2IiSimpleRanging:53L3A2IiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="VL53L4CXIiSimpleRanging:VL53L4CXIiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L4A2IiMultiSensorRanging:53L4A2IiMultiSensorRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L4A2IiSimpleRanging:53L4A2IiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="VL53L4CDIiSimpleRanging:VL53L4CDIiSimpleRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L4A1IiThresholdDetection:53L4A1IiThresholdDetection" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L4A1IiMultiSensorRanging:53L4A1IiMultiSensorRanging" ModuleName="TOF"/>
+        <SubComponent Csub="" Cvariant="53L4A1IiSimpleRanging:53L4A1IiSimpleRanging" ModuleName="TOF"/>
+    </RefComponent>
+    <RefComponent Cclass="STM32CubeIiCustomIiBSPIiDriversCcBoardOoSupport" Cgroup="Custom" Cversion="1Gg0Gg0">
+        <SubComponent Csub="RANGINGIiSENSOR" Cvariant="true" Cversion="1Gg0Gg0"/>
+    </RefComponent>
+</IP>

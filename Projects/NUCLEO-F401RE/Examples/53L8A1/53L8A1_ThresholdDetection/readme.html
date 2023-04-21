@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>README</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../../../../../_htmresc/mini-st_2020.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<div class="row">
+<div class="col-sm-12 col-lg-11">
+<div class="collapse">
+<div>
+<h3 id="l8a1_thresholddetection-example-description"><b>53L8A1_ThresholdDetection example description</b></h3>
+<p>This example application shows how to use the X-NUCLEO-53L8A1 expansion board and a STM32 Nucleo board to perform threshold detection and print the results on a hyper-terminal such as TeraTerm through a serial link. Please refer to the user manual for more details.</p>
+<p>The example application uses the following default serial settings:</p>
+<ul>
+<li>Baud Rate: 460800</li>
+<li>Data Bits: 8</li>
+<li>Parity: None</li>
+<li>Stop Bits: 1</li>
+</ul>
+<h3 id="keywords"><b>Keywords</b></h3>
+<p>TOF, I2C, VCOM</p>
+<h3 id="hardware-and-software-environment"><b>Hardware and Software environment</b></h3>
+<ul>
+<li>This example runs on STM32 Nucleo boards with X-NUCLEO-53L8A1 STM32 expansion board</li>
+<li>Make sure <em>there is NO</em> VL53L8CX-SATEL plugged on the X-NUCLEO-53L8A1 expansion board.</li>
+<li>If you power the Nucleo board via USB 3.0 port, please check that you have flashed the last version of the firmware of ST-Link v2 inside the Nucleo board. In order to flash the last available firmware of the ST-Link v2, you can use the STM32 ST Link Utility.</li>
+<li>This example has been tested with STMicroelectronics:
+<ul>
+<li><a href="https://www.st.com/en/evaluation-tools/nucleo-f401re.html">NUCLEO-F401RE board</a></li>
+<li><a href="https://www.st.com/content/st_com/en/products/evaluation-tools/product-evaluation-tools/imaging-evaluation-boards/x-nucleo-53l8a1.html">ADDITIONAL_BOARD X-NUCLEO-53L8A1</a></li>
+</ul></li>
+</ul>
+<h3 id="how-to-use-it"><b>How to use it ?</b></h3>
+<p>In order to make the program work, you must do the following:</p>
+<ul>
+<li>WARNING: before opening the project with any toolchain be sure your folder installation path is not too in-depth since the toolchain may report errors after building.</li>
+<li>Open STM32CubeIDE (this firmware has been successfully tested with Version 1.10.1). Alternatively you can use the Keil uVision toolchain (this firmware has been successfully tested with V5.37.0) or the IAR toolchain (this firmware has been successfully tested with Embedded Workbench V9.20.1).</li>
+<li>Rebuild all files and load your image into target memory.</li>
+<li>Run the example.</li>
+<li>Alternatively, you can download the pre-built binaries in “Binary” folder included in the distributed package.</li>
+</ul>
+<h3 id="license"><b>License</b></h3>
+<p>Copyright (c) 2022 STMicroelectronics. All rights reserved.</p>
+<p>This software is licensed under terms that can be found in the LICENSE file in the root directory of this software component. If no LICENSE file comes with this software, it is provided AS-IS.</p>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
