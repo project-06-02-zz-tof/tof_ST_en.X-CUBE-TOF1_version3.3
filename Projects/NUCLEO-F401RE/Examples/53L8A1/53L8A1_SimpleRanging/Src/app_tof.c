@@ -50,6 +50,7 @@ volatile uint8_t ToF_EventDetected = 0;
 static void MX_53L8A1_SimpleRanging_Init(void);
 static void MX_53L8A1_SimpleRanging_Process(void);
 static void print_result(RANGING_SENSOR_Result_t *Result);
+static void print_result_myself(RANGING_SENSOR_Result_t *Result);
 static void toggle_resolution(void);
 static void toggle_signal_and_ambient(void);
 static void clear_screen(void);
@@ -142,7 +143,8 @@ static void MX_53L8A1_SimpleRanging_Process(void)
 
     if (status == BSP_ERROR_NONE)
     {
-      print_result(&Result);
+      //print_result(&Result);
+      print_result_myself(&Result);
     }
 
     if (com_has_data())
@@ -152,6 +154,22 @@ static void MX_53L8A1_SimpleRanging_Process(void)
 
     HAL_Delay(POLLING_PERIOD);
   }
+}
+
+static void print_result_myself(RANGING_SENSOR_Result_t *Result) {
+  uint8_t zones_per_line;
+  zones_per_line =
+      ((Profile.RangingProfile == RS_PROFILE_8x8_AUTONOMOUS) || (Profile.RangingProfile == RS_PROFILE_8x8_CONTINUOUS))
+          ? 8
+          : 4;
+
+  for (uint8_t i = 0; i < zones_per_line; i++) {
+    for (uint8_t j = 0; j < zones_per_line; j++) {
+      printf("%d ", (long)Result->ZoneResult[i * zones_per_line + j].Distance[0]);
+    }
+    printf("\r\n");
+  }
+  printf("\r\n");
 }
 
 static void print_result(RANGING_SENSOR_Result_t *Result)
