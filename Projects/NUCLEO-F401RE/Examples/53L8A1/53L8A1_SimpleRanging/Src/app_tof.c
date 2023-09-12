@@ -119,11 +119,11 @@ static void MX_53L8A1_SimpleRanging_Process(void)
   VL53L8A1_RANGING_SENSOR_ReadID(VL53L8A1_DEV_CENTER, &Id);
   VL53L8A1_RANGING_SENSOR_GetCapabilities(VL53L8A1_DEV_CENTER, &Cap);
 
-  Profile.RangingProfile = RS_PROFILE_4x4_CONTINUOUS;
+  Profile.RangingProfile = RS_PROFILE_8x8_CONTINUOUS;
   Profile.TimingBudget = TIMING_BUDGET; /* 5 ms < TimingBudget < 100 ms */
   Profile.Frequency = RANGING_FREQUENCY; /* Ranging frequency Hz (shall be consistent with TimingBudget value) */
-  Profile.EnableAmbient = 0; /* Enable: 1, Disable: 0 */
-  Profile.EnableSignal = 0; /* Enable: 1, Disable: 0 */
+  Profile.EnableAmbient = 1; /* Enable: 1, Disable: 0 */
+  Profile.EnableSignal = 1; /* Enable: 1, Disable: 0 */
 
   /* set the profile if different from default one */
   VL53L8A1_RANGING_SENSOR_ConfigProfile(VL53L8A1_DEV_CENTER, &Profile);
@@ -165,7 +165,12 @@ static void print_result_myself(RANGING_SENSOR_Result_t *Result) {
 
   for (uint8_t i = 0; i < zones_per_line; i++) {
     for (uint8_t j = 0; j < zones_per_line; j++) {
-      printf("%d ", (long)Result->ZoneResult[i * zones_per_line + j].Distance[0]);
+      printf("%5d(%2d)(%5d/%5d) ",
+      (long)Result->ZoneResult[i * zones_per_line + j].Distance[0],
+      (long)Result->ZoneResult[i * zones_per_line + j].Status[0],
+      (long)Result->ZoneResult[i * zones_per_line + j].Ambient[0],
+      (long)Result->ZoneResult[i * zones_per_line + j].Signal[0]         
+      );
     }
     printf("\r\n");
   }
