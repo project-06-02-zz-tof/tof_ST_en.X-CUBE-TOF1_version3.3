@@ -51,6 +51,7 @@ static void MX_53L8A1_SimpleRanging_Init(void);
 static void MX_53L8A1_SimpleRanging_Process(void);
 static void print_result(RANGING_SENSOR_Result_t *Result);
 static void print_result_myself(RANGING_SENSOR_Result_t *Result);
+static void print_result_myself_distance(RANGING_SENSOR_Result_t *Result);
 static void toggle_resolution(void);
 static void toggle_signal_and_ambient(void);
 static void clear_screen(void);
@@ -144,7 +145,8 @@ static void MX_53L8A1_SimpleRanging_Process(void)
     if (status == BSP_ERROR_NONE)
     {
       //print_result(&Result);
-      print_result_myself(&Result);
+      //print_result_myself(&Result);
+      print_result_myself_distance(&Result);
     }
 
     if (com_has_data())
@@ -171,6 +173,106 @@ static void print_result_myself(RANGING_SENSOR_Result_t *Result) {
       (long)Result->ZoneResult[i * zones_per_line + j].Ambient[0],
       (long)Result->ZoneResult[i * zones_per_line + j].Signal[0]         
       );
+    }
+    printf("\r\n");
+  }
+  printf("\r\n");
+}
+
+  uint8_t left_arr[8][8];
+  uint8_t right_arr[8][8];
+  uint8_t up_arr[8][8];
+//  static bool arr_tof_init = false;
+
+  void output_arr_init(void) {
+
+      uint8_t left_row_up = 1;
+      uint8_t left_row_button = 6;
+      uint8_t left_column = 4;
+
+      uint8_t right_row_up = 1;
+      uint8_t right_row_button = 6;
+      uint8_t right_column = 3;
+
+      uint8_t up_row = 5;
+      uint8_t up_column_left = 1;
+      uint8_t up_column_right = 6;
+
+      for (uint8_t i = 0; i < 8; i++) {
+        for (uint8_t j = 0; j < 8; j++) {
+          if (i > left_row_up && i < left_row_button && j < left_column) {
+            left_arr[i][j] = 1;
+          } else {
+            left_arr[i][j] = 0;
+          }
+
+          if (i > right_row_up && i < right_row_button && j > right_column) {
+            right_arr[i][j] = 1;
+          } else {
+            right_arr[i][j] = 0;
+          }
+
+          if (i < up_row && j > up_column_left && j < up_column_right) {
+            up_arr[i][j] = 1;
+          } else {
+            up_arr[i][j] = 0;
+          }
+        }
+      }
+  }
+
+    void matrix_rotate(RANGING_SENSOR_Result_t *Result, uint32_t arr[][8],uint8_t zones_per_line) {
+    uint32_t origin_arr[8][8];
+    for (uint8_t i = 0; i < zones_per_line; i++) {
+      for (uint8_t j = 0; j < zones_per_line; j++) {
+        if (Result->ZoneResult[i * zones_per_line + j].Status[0] == 0) {
+          origin_arr[i][j] = Result->ZoneResult[i * zones_per_line + j].Distance[0];
+        } else {
+          origin_arr[i][j] = 0;
+        }
+      }
+    }
+    for (uint8_t i = 0; i < zones_per_line; i++) {
+      for (uint8_t j = 0; j < zones_per_line; j++) {
+        arr[i][j] = origin_arr[zones_per_line - 1 - i][zones_per_line - 1 - j];
+      }
+    }
+  }
+
+
+static void print_result_myself_distance(RANGING_SENSOR_Result_t *Result) {
+  uint8_t zones_per_line;
+  zones_per_line =
+      ((Profile.RangingProfile == RS_PROFILE_8x8_AUTONOMOUS) || (Profile.RangingProfile == RS_PROFILE_8x8_CONTINUOUS))
+          ? 8
+          : 4;
+
+  uint32_t origin_arr[8][8];
+  uint32_t new_arr[8][8];
+
+  matrix_rotate(Result,new_arr,zones_per_line);
+  output_arr_init();
+
+  // for (uint8_t i = 0; i < zones_per_line; i++) {
+  //   for (uint8_t j = 0; j < zones_per_line; j++) {
+  //     origin_arr[i][j] = (long)Result->ZoneResult[i * zones_per_line + j].Distance[0];
+  //   }
+  // }
+  // for (uint8_t i = 0; i < zones_per_line; i++) {
+  //   for (uint8_t j = 0; j < zones_per_line; j++) {
+  //     new_arr[i][j] = origin_arr[zones_per_line - 1 - i][zones_per_line - 1 - j];
+  //   }
+  // }
+
+    for (uint8_t i = 0; i < zones_per_line; i++) {
+    for (uint8_t j = 0; j < zones_per_line; j++) {
+      new_arr[i][j] =  new_arr[i][j]*up_arr[i][j];
+    } 
+  }
+
+  for (uint8_t i = 0; i < zones_per_line; i++) {
+    for (uint8_t j = 0; j < zones_per_line; j++) {
+      printf("%d ", new_arr[i][j]);
     }
     printf("\r\n");
   }

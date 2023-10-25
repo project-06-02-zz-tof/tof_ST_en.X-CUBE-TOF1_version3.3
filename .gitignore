@@ -5,3 +5,8 @@ Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L1CB_SimpleRanging/MDK-ARM/VL53L1CB_S
 Projects/NUCLEO-F401RE/Examples/53L8A1/53L8A1_SimpleRanging/MDK-ARM/53L8A1_SimpleRanging/*
 Projects/NUCLEO-F401RE/Examples/53L8A1/53L8A1_SimpleRanging/MDK-ARM/53L8A1_SimpleRanging.uvguix.10243
 Projects/NUCLEO-F401RE/Examples/53L8A1/53L8A1_SimpleRanging/MDK-ARM/53L8A1_SimpleRanging.uvoptx
+
+
+Projects/NUCLEO-F401RE/Examples/53L8A1/53L8A1_ThresholdDetection/MDK-ARM/53L8A1_ThresholdDetection/*
+Projects/NUCLEO-F401RE/Examples/53L8A1/53L8A1_ThresholdDetection/MDK-ARM/53L8A1_ThresholdDetection.uvguix.10243
+Projects/NUCLEO-F401RE/Examples/53L8A1/53L8A1_ThresholdDetection/MDK-ARM/53L8A1_ThresholdDetection.uvoptx

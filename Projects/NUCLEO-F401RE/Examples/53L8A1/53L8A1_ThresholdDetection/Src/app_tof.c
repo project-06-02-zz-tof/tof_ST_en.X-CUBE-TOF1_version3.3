@@ -59,7 +59,7 @@ extern "C" {
 
 /* Private define ------------------------------------------------------------*/
 #define TIMING_BUDGET (30U) /* 5 ms < TimingBudget < 100 ms */
-#define RANGING_FREQUENCY (5U) /* Ranging frequency Hz (shall be consistent with TimingBudget value) */
+#define RANGING_FREQUENCY (60U) /* Ranging frequency Hz (shall be consistent with TimingBudget value) */
 
 /* Private variables ---------------------------------------------------------*/
 static RANGING_SENSOR_Capabilities_t Cap;
@@ -141,9 +141,9 @@ static void MX_53L8A1_ThresholdDetection_Process(void)
   VL53L8A1_RANGING_SENSOR_ConfigProfile(VL53L8A1_DEV_CENTER, &Profile);
 
   /* threshold parameters */
-  ITConfig.Criteria = RS_IT_IN_WINDOW;
-  ITConfig.LowThreshold = 200; /* mm */
-  ITConfig.HighThreshold = 600; /* mm */
+  ITConfig.Criteria = RS_IT_BELOW_LOW;
+  ITConfig.LowThreshold = 1000; /* mm */
+  ITConfig.HighThreshold = 2000; /* mm */
 
   VL53L8A1_RANGING_SENSOR_ConfigIT(VL53L8A1_DEV_CENTER, &ITConfig);
 
