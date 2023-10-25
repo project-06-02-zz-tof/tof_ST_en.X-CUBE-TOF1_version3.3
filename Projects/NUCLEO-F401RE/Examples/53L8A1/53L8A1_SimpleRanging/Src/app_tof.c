@@ -123,8 +123,8 @@ static void MX_53L8A1_SimpleRanging_Process(void)
   Profile.RangingProfile = RS_PROFILE_8x8_CONTINUOUS;
   Profile.TimingBudget = TIMING_BUDGET; /* 5 ms < TimingBudget < 100 ms */
   Profile.Frequency = RANGING_FREQUENCY; /* Ranging frequency Hz (shall be consistent with TimingBudget value) */
-  Profile.EnableAmbient = 1; /* Enable: 1, Disable: 0 */
-  Profile.EnableSignal = 1; /* Enable: 1, Disable: 0 */
+  Profile.EnableAmbient = 0; /* Enable: 1, Disable: 0 */
+  Profile.EnableSignal = 0; /* Enable: 1, Disable: 0 */
 
   /* set the profile if different from default one */
   VL53L8A1_RANGING_SENSOR_ConfigProfile(VL53L8A1_DEV_CENTER, &Profile);
@@ -137,14 +137,20 @@ static void MX_53L8A1_SimpleRanging_Process(void)
     while(1);
   }
 
+  uint32_t last_time_ = 0;
+  uint32_t now_time_ = 0;
+
   while (1)
   {
-    /* polling mode */
+    /* polling mode */  
     status = VL53L8A1_RANGING_SENSOR_GetDistance(VL53L8A1_DEV_CENTER, &Result);
-
-    printf("now tick value is %d\r\n",HAL_GetTick());
     if (status == BSP_ERROR_NONE)
     {
+      now_time_ = HAL_GetTick();
+      //printf("the target fre is %d ,the infact fre is %d \r\n",RANGING_FREQUENCY,1000/(now_time_ - last_time_));
+      printf("%d %d \r\n",RANGING_FREQUENCY,1000/(now_time_ - last_time_));
+      last_time_ = now_time_;
+
       //print_result(&Result);
       //print_result_myself(&Result);
       //print_result_myself_distance(&Result);
@@ -154,10 +160,10 @@ static void MX_53L8A1_SimpleRanging_Process(void)
       //printf("read data error\r\n");
     }
 
-    if (com_has_data())
-    {
-      handle_cmd(get_key());
-    }
+    // if (com_has_data())
+    // {
+    //   handle_cmd(get_key());
+    // }
 
     HAL_Delay(5);
   }
