@@ -35,7 +35,7 @@ extern "C" {
 
 /* Private define ------------------------------------------------------------*/
 #define TIMING_BUDGET (30U) /* 5 ms < TimingBudget < 100 ms */
-#define RANGING_FREQUENCY (5U) /* Ranging frequency Hz (shall be consistent with TimingBudget value) */
+#define RANGING_FREQUENCY (30U) /* Ranging frequency Hz (shall be consistent with TimingBudget value) */
 #define POLLING_PERIOD (1000U/RANGING_FREQUENCY) /* refresh rate for polling mode (milliseconds) */
 
 /* Private variables ---------------------------------------------------------*/
@@ -129,7 +129,7 @@ static void MX_53L8A1_SimpleRanging_Process(void)
   /* set the profile if different from default one */
   VL53L8A1_RANGING_SENSOR_ConfigProfile(VL53L8A1_DEV_CENTER, &Profile);
 
-  status = VL53L8A1_RANGING_SENSOR_Start(VL53L8A1_DEV_CENTER, RS_MODE_BLOCKING_CONTINUOUS);
+  status = VL53L8A1_RANGING_SENSOR_Start(VL53L8A1_DEV_CENTER, RS_MODE_ASYNC_CONTINUOUS);
 
   if (status != BSP_ERROR_NONE)
   {
@@ -142,11 +142,16 @@ static void MX_53L8A1_SimpleRanging_Process(void)
     /* polling mode */
     status = VL53L8A1_RANGING_SENSOR_GetDistance(VL53L8A1_DEV_CENTER, &Result);
 
+    printf("now tick value is %d\r\n",HAL_GetTick());
     if (status == BSP_ERROR_NONE)
     {
       //print_result(&Result);
       //print_result_myself(&Result);
-      print_result_myself_distance(&Result);
+      //print_result_myself_distance(&Result);
+    }
+    else
+    {
+      //printf("read data error\r\n");
     }
 
     if (com_has_data())
@@ -154,7 +159,7 @@ static void MX_53L8A1_SimpleRanging_Process(void)
       handle_cmd(get_key());
     }
 
-    HAL_Delay(POLLING_PERIOD);
+    HAL_Delay(5);
   }
 }
 

@@ -332,6 +332,10 @@ int32_t VL53L8CX_ConfigProfile(VL53L8CX_Object_t *pObj, VL53L8CX_ProfileConfig_t
   {
     ret = VL53L8CX_ERROR;
   }
+  else if (vl53l8cx_set_target_order(&pObj->Dev, VL53L8CX_TARGET_ORDER_CLOSEST) != VL53L8CX_STATUS_OK)
+  {
+    ret = VL53L8CX_ERROR;
+  }
   else
   {
     pObj->IsAmbientEnabled = (pConfig->EnableAmbient == 0U) ? 0U : 1U;
