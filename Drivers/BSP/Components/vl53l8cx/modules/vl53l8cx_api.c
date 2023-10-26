@@ -285,8 +285,9 @@ uint8_t vl53l8cx_init(
 
 	/* Enable FW access */
 	status |= WrByte(&(p_dev->platform), 0x7fff, 0x01);
-	status |= WrByte(&(p_dev->platform), 0x06, 0x03);
-	status |= _vl53l8cx_poll_for_answer(p_dev, 1, 0, 0x21, 0x10, 0x10);
+	status |= WrByte(&(p_dev->platform), 0x06, 0x01);
+	status |= _vl53l8cx_poll_for_answer(p_dev, 1, 0, 0x21, 0xFF, 0x4);
+
 	status |= WrByte(&(p_dev->platform), 0x7fff, 0x00);
 
 	/* Enable host access to GO1 */
@@ -313,12 +314,11 @@ uint8_t vl53l8cx_init(
 	/* Wake up MCU */
 	status |= WrByte(&(p_dev->platform), 0x7fff, 0x00);
 	status |= RdByte(&(p_dev->platform), 0x7fff, &tmp);
-	status |= WrByte(&(p_dev->platform), 0x0C, 0x00);
 	status |= WrByte(&(p_dev->platform), 0x7fff, 0x01);
 	status |= WrByte(&(p_dev->platform), 0x20, 0x07);
 	status |= WrByte(&(p_dev->platform), 0x20, 0x06);
 
-	/* Download FW into VL53L5 */
+	/* Download FW into VL53L8CX */
 	status |= WrByte(&(p_dev->platform), 0x7fff, 0x09);
 	status |= WrMulti(&(p_dev->platform),0,
 		(uint8_t*)&VL53L8CX_FIRMWARE[0],0x8000);
@@ -333,7 +333,8 @@ uint8_t vl53l8cx_init(
 	/* Check if FW correctly downloaded */
 	status |= WrByte(&(p_dev->platform), 0x7fff, 0x01);
 	status |= WrByte(&(p_dev->platform), 0x06, 0x03);
-	status |= _vl53l8cx_poll_for_answer(p_dev, 1, 0, 0x21, 0x10, 0x10);
+
+	status |= WaitMs(&(p_dev->platform), 5);
 	status |= WrByte(&(p_dev->platform), 0x7fff, 0x00);
 	status |= RdByte(&(p_dev->platform), 0x7fff, &tmp);
 	status |= WrByte(&(p_dev->platform), 0x0C, 0x01);

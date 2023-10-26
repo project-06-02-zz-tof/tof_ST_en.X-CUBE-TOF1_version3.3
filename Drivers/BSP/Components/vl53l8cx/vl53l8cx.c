@@ -725,16 +725,17 @@ static int32_t vl53l8cx_get_result(VL53L8CX_Object_t *pObj, VL53L8CX_Result_t *p
   {
     ret = VL53L8CX_INVALID_PARAM;
   }
-  else if (vl53l8cx_get_resolution(&pObj->Dev, &resolution) != VL53L8CX_STATUS_OK)
-  {
-    ret = VL53L8CX_ERROR;
-  }
+  // else if (vl53l8cx_get_resolution(&pObj->Dev, &resolution) != VL53L8CX_STATUS_OK)
+  // {
+  //   ret = VL53L8CX_ERROR;
+  // }
   else if (vl53l8cx_get_ranging_data(&pObj->Dev, &data) != VL53L8CX_STATUS_OK)
   {
     ret = VL53L8CX_ERROR;
   }
   else
   {
+    resolution = 64;
     pResult->NumberOfZones = resolution;
 
     for (i = 0; i < resolution; i++)

@@ -123,8 +123,8 @@ static void MX_53L8A1_SimpleRanging_Process(void)
   Profile.RangingProfile = RS_PROFILE_8x8_CONTINUOUS;
   Profile.TimingBudget = TIMING_BUDGET; /* 5 ms < TimingBudget < 100 ms */
   Profile.Frequency = RANGING_FREQUENCY; /* Ranging frequency Hz (shall be consistent with TimingBudget value) */
-  Profile.EnableAmbient = 0; /* Enable: 1, Disable: 0 */
-  Profile.EnableSignal = 0; /* Enable: 1, Disable: 0 */
+  Profile.EnableAmbient = 1; /* Enable: 1, Disable: 0 */
+  Profile.EnableSignal = 1; /* Enable: 1, Disable: 0 */
 
   /* set the profile if different from default one */
   VL53L8A1_RANGING_SENSOR_ConfigProfile(VL53L8A1_DEV_CENTER, &Profile);
