@@ -34,7 +34,7 @@ extern "C" {
 
 /* Private define ------------------------------------------------------------*/
 #define TIMING_BUDGET (30U) /* 16 ms < TimingBudget < 500 ms */
-#define POLLING_PERIOD (250U) /* refresh rate for polling mode (milliseconds, shall be consistent with TimingBudget value) */
+#define POLLING_PERIOD (2U) /* refresh rate for polling mode (milliseconds, shall be consistent with TimingBudget value) */
 
 /* Private variables ---------------------------------------------------------*/
 static RANGING_SENSOR_Capabilities_t Cap;
@@ -105,7 +105,7 @@ static void MX_VL53L1CB_SimpleRanging_Process(void)
   CUSTOM_RANGING_SENSOR_ReadID(CUSTOM_VL53L1CB, &Id);
   CUSTOM_RANGING_SENSOR_GetCapabilities(CUSTOM_VL53L1CB, &Cap);
 
-  Profile.RangingProfile = RS_MULTI_TARGET_MEDIUM_RANGE;
+  Profile.RangingProfile = RS_MULTI_TARGET_LONG_RANGE;
   Profile.TimingBudget = TIMING_BUDGET; /* 16 ms < TimingBudget < 500 ms */
   Profile.Frequency = 0; /* Induces intermeasurement period, set to ZERO for normal ranging */
   Profile.EnableAmbient = 1; /* Enable: 1, Disable: 0 */
@@ -114,7 +114,7 @@ static void MX_VL53L1CB_SimpleRanging_Process(void)
   /* set the profile if different from default one */
   CUSTOM_RANGING_SENSOR_ConfigProfile(CUSTOM_VL53L1CB, &Profile);
 
-  status = CUSTOM_RANGING_SENSOR_Start(CUSTOM_VL53L1CB, RS_MODE_BLOCKING_CONTINUOUS);
+  status = CUSTOM_RANGING_SENSOR_Start(CUSTOM_VL53L1CB, RS_MODE_ASYNC_CONTINUOUS);
 
   while (1)
   {
