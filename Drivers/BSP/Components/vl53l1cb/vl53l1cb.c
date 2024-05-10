@@ -143,10 +143,10 @@ int32_t VL53L1CB_Init(VL53L1CB_Object_t *pObj)
   {
     ret = VL53L1CB_ERROR;
   }
-  else if (VL53L1_PerformRefSpadManagement(pObj) != VL53L1_ERROR_NONE)
-  {
-    ret = VL53L1CB_ERROR;
-  }
+  // else if (VL53L1_PerformRefSpadManagement(pObj) != VL53L1_ERROR_NONE)
+  // {
+  //   ret = VL53L1CB_ERROR;
+  // }
   else
   {
     pObj->IsRanging = 0;
@@ -650,6 +650,18 @@ static int32_t vl53l1cb_get_result(VL53L1CB_Object_t *pObj, VL53L1CB_Result_t *p
   }
   else
   {
+    // uint16_t length = sizeof(data);
+    // uint8_t *raw_data = (uint8_t *)(&data);
+    // for(uint16_t i = 0 ; i< length ;i++)
+    // {
+    //   printf("%x ",raw_data[i]);
+    //   if(i/20)
+    //   {
+    //     printf("\r\n");
+    //   }
+    // }
+
+
     for (i = 0; i < VL53L1CB_MAX_NB_ZONES; i++)
     {
       /* number of detected targets by the device */

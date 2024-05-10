@@ -6,3 +6,9 @@ Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L1CB_SimpleRanging/MDK-ARM/VL53L1CB_S
 Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L1CB_SimpleRanging/MDK-ARM/VL53L1CB_SimpleRanging.uvoptx
 Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L1CB_SimpleRanging/STM32CubeIDE/.cproject
 Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L1CB_SimpleRanging/MDK-ARM/JLinkLog.txt
+Projects/NUCLEO-F401RE/Examples/53L1A2/53L1A2_SimpleRanging/MDK-ARM/53L1A2_SimpleRanging/*
+Projects/NUCLEO-F401RE/Examples/53L1A2/53L1A2_SimpleRanging/MDK-ARM/53L1A2_SimpleRanging.uvoptx
+Projects/NUCLEO-F401RE/Examples/53L1A2/53L1A2_SimpleRanging/MDK-ARM/53L1A2_SimpleRanging.uvguix.10243
+.vscode/settings.json
+Projects/NUCLEO-F401RE/Examples/53L1A2/53L1A2_SimpleRanging/MDK-ARM/DebugConfig/53L1A2_SimpleRanging_STM32F401RETx.dbgconf
+Projects/NUCLEO-F401RE/Examples/CUSTOM/VL53L1CB_SimpleRanging/STM32CubeIDE/.settings/language.settings.xml
