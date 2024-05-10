@@ -25,6 +25,6 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
 {
   if (GPIO_Pin == TOF_INT_EXTI_PIN)
   {
-    ToF_EventDetected = 1;
+    // ToF_EventDetected = 1;
   }
 }
