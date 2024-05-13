@@ -111,7 +111,7 @@ static void MX_53L1A2_SimpleRanging_Process(void)
   VL53L1A2_RANGING_SENSOR_ReadID(VL53L1A2_DEV_CENTER, &Id);
   VL53L1A2_RANGING_SENSOR_GetCapabilities(VL53L1A2_DEV_CENTER, &Cap);
 
-  Profile.RangingProfile = RS_MULTI_TARGET_SHORT_RANGE;
+  Profile.RangingProfile = RS_MULTI_TARGET_MEDIUM_RANGE;
   Profile.TimingBudget = TIMING_BUDGET; /* 16 ms < TimingBudget < 500 ms */
   Profile.Frequency = 0; /* Induces intermeasurement period, set to ZERO for normal ranging */
   Profile.EnableAmbient = 1; /* Enable: 1, Disable: 0 */
@@ -184,14 +184,19 @@ static void print_result_copy_multi(RANGING_SENSOR_Result_t *Result)
     //   (long)Result->ZoneResult[i].Status[0],
     //   (long)Result->ZoneResult[i].Distance[0]);
 
-      printf("{Status is %ld }\n",(long)Result->ZoneResult[i].Status[0]);
-      printf("{Distance is %5ld mm}\n",(long)Result->ZoneResult[i].Distance[0]);
-      printf("{Ambient is %ld.%02ld kcps/spad}\n",(long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]));
-      printf("{Signal is %ld.%02ld kcps/spad}\n",(long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]));
-      printf("{NumberTarget is %ld }\n",(long)Result->ZoneResult[i].NumberOfTargets);
-      
+      // printf("{Status is %ld }\n",(long)Result->ZoneResult[i].Status[0]);
+      // printf("{Distance is %5ld mm}\n",(long)Result->ZoneResult[i].Distance[0]);
+      // printf("{Ambient is %ld.%02ld kcps/spad}\n",(long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]));
+      // printf("{Signal is %ld.%02ld kcps/spad}\n",(long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]));
+      // printf("{NumberTarget is %ld }\n",(long)Result->ZoneResult[i].NumberOfTargets);
+
+      printf("{plotter:%ld,%5ld,%ld.%02ld,%ld.%02ld,%ld}\n", 
+      (long)Result->ZoneResult[i].Status[0],
+      (long)Result->ZoneResult[i].Distance[0], 
+      (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]),
+      (long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]),
+      (long)Result->ZoneResult[i].NumberOfTargets);
   }
-  printf ("\n");
 }
 
 
