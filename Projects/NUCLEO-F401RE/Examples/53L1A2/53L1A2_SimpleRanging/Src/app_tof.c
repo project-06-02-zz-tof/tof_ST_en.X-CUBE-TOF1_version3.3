@@ -111,7 +111,7 @@ static void MX_53L1A2_SimpleRanging_Process(void)
   VL53L1A2_RANGING_SENSOR_ReadID(VL53L1A2_DEV_CENTER, &Id);
   VL53L1A2_RANGING_SENSOR_GetCapabilities(VL53L1A2_DEV_CENTER, &Cap);
 
-  Profile.RangingProfile = RS_MULTI_TARGET_MEDIUM_RANGE;
+  Profile.RangingProfile = RS_MULTI_TARGET_LONG_RANGE;
   Profile.TimingBudget = TIMING_BUDGET; /* 16 ms < TimingBudget < 500 ms */
   Profile.Frequency = 0; /* Induces intermeasurement period, set to ZERO for normal ranging */
   Profile.EnableAmbient = 1; /* Enable: 1, Disable: 0 */
