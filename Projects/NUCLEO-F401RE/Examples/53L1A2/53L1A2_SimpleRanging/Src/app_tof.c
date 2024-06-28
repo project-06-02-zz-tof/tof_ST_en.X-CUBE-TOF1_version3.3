@@ -173,6 +173,16 @@ static void print_result(RANGING_SENSOR_Result_t *Result)
   printf ("\n");
 }
 
+// C语言示例代码
+// 1.首先定义宏函数简化后期工作（ARMCC/ARMGCC/GCC编译器）：
+#define PRINT(window, fmt, args...) printf("{"#window"}"fmt"\n", ##args)
+// 2.若要将电压和电流数据进行绘图，并将功率数据分窗显示，可这样调用：
+// PRINT(plotter, "%d,%d", current, voltage);
+// PRINT(power, "the power is %d W", current * voltage);
+// 3.实际显示效果可能如下：
+//     {plotter}3,2
+//     {power}the power is 6 W
+
 
 static void print_result_copy_multi(RANGING_SENSOR_Result_t *Result)
 {
@@ -196,6 +206,12 @@ static void print_result_copy_multi(RANGING_SENSOR_Result_t *Result)
       (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]),
       (long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]),
       (long)Result->ZoneResult[i].NumberOfTargets);
+
+      PRINT(signal,"%ld.%02ld,%ld.%02ld", (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]),
+      (long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]));
+
+      PRINT(distance, "%ld,%5ld,%ld", (long)Result->ZoneResult[i].Status[0], (long)Result->ZoneResult[i].Distance[0],
+            (long)Result->ZoneResult[i].NumberOfTargets);
   }
 }
 
