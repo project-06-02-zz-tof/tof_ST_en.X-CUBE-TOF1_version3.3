@@ -183,38 +183,51 @@ static void print_result(RANGING_SENSOR_Result_t *Result)
 //     {plotter}3,2
 //     {power}the power is 6 W
 
-
-static void print_result_copy_multi(RANGING_SENSOR_Result_t *Result)
-{
+static void print_result_copy_multi(RANGING_SENSOR_Result_t *Result) {
   uint8_t i;
+  int distance_invaild = -1;
 
-  for (i = 0; i < RANGING_SENSOR_MAX_NB_ZONES; i++)
-  {
+  for (i = 0; i < RANGING_SENSOR_MAX_NB_ZONES; i++) {
     // printf("Status = %2ld, Distance = %5ld mm",
     //   (long)Result->ZoneResult[i].Status[0],
     //   (long)Result->ZoneResult[i].Distance[0]);
 
-      // printf("{Status is %ld }\n",(long)Result->ZoneResult[i].Status[0]);
-      // printf("{Distance is %5ld mm}\n",(long)Result->ZoneResult[i].Distance[0]);
-      // printf("{Ambient is %ld.%02ld kcps/spad}\n",(long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]));
-      // printf("{Signal is %ld.%02ld kcps/spad}\n",(long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]));
-      // printf("{NumberTarget is %ld }\n",(long)Result->ZoneResult[i].NumberOfTargets);
+    // printf("{Status is %ld }\n",(long)Result->ZoneResult[i].Status[0]);
+    // printf("{Distance is %5ld mm}\n",(long)Result->ZoneResult[i].Distance[0]);
+    // printf("{Ambient is %ld.%02ld
+    // kcps/spad}\n",(long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]));
+    // printf("{Signal is %ld.%02ld
+    // kcps/spad}\n",(long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]));
+    // printf("{NumberTarget is %ld }\n",(long)Result->ZoneResult[i].NumberOfTargets);
 
-      printf("{plotter:%ld,%5ld,%ld.%02ld,%ld.%02ld,%ld}\n", 
+
+    // if ((long)Result->ZoneResult[i].Status[0] == 0 && Result->ZoneResult[i].NumberOfTargets > 0 &&  (long)Result->ZoneResult[i].Distance[0] > 150)
+    // {
+    if ((long)Result->ZoneResult[i].Status[0] == 0 && Result->ZoneResult[i].NumberOfTargets > 0)
+    {
+      printf("{plotter:%ld,%5ld,%ld.%02ld,%ld.%02ld,%ld}\n",
       (long)Result->ZoneResult[i].Status[0],
       (long)Result->ZoneResult[i].Distance[0], 
-      (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]),
+      (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]), 
       (long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]),
-      (long)Result->ZoneResult[i].NumberOfTargets);
-
-      PRINT(signal,"%ld.%02ld,%ld.%02ld", (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]),
-      (long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]));
-
-      PRINT(distance, "%ld,%5ld,%ld", (long)Result->ZoneResult[i].Status[0], (long)Result->ZoneResult[i].Distance[0],
-            (long)Result->ZoneResult[i].NumberOfTargets);
+      (long)Result->ZoneResult[i].NumberOfTargets * 1000);
+    }
+    else
+    {
+      // printf("{plotter:%ld,%5ld,%ld.%02ld,%ld.%02ld,%ld}\n",
+      // (long)Result->ZoneResult[i].Status[0],
+      // distance_invaild, 
+      // (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]), 
+      // (long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]),
+      // (long)Result->ZoneResult[i].NumberOfTargets * 1000);
+    }
+    // PRINT(signal,"%ld.%02ld,%ld.%02ld",
+    // (long)Result->ZoneResult[i].Ambient[0],(long)decimal_part(Result->ZoneResult[i].Ambient[0]),
+    // (long)Result->ZoneResult[i].Signal[0],(long)decimal_part(Result->ZoneResult[i].Signal[0]));
+    // PRINT(distance, "%ld,%5ld,%ld", (long)Result->ZoneResult[i].Status[0], (long)Result->ZoneResult[i].Distance[0],
+    // (long)Result->ZoneResult[i].NumberOfTargets);
   }
 }
-
 
 static int32_t decimal_part(float_t x)
 {
