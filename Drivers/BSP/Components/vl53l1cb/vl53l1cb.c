@@ -143,10 +143,19 @@ int32_t VL53L1CB_Init(VL53L1CB_Object_t *pObj)
   {
     ret = VL53L1CB_ERROR;
   }
-  // else if (VL53L1_PerformRefSpadManagement(pObj) != VL53L1_ERROR_NONE)
+  else if (VL53L1_PerformRefSpadManagement(pObj) != VL53L1_ERROR_NONE)
+  {
+    ret = VL53L1CB_ERROR;
+  }
+  // else if(VL53L1_AppliXtalkCalibration(pObj)!= VL53L1_ERROR_NONE)
   // {
   //   ret = VL53L1CB_ERROR;
   // }
+  else if(VL53L1CB_XTalkCalibration(pObj) != VL53L1_ERROR_NONE)
+  {
+    ret = VL53L1CB_ERROR;
+  }
+
   else
   {
     pObj->IsRanging = 0;

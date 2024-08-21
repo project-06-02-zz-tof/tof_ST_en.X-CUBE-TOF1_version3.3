@@ -522,9 +522,9 @@ VL53L1_Error VL53L1_StaticInit(VL53L1_DEV Dev)
 	Status = VL53L1_SetPresetMode(Dev,
 			VL53L1_PRESETMODE_RANGING);
 	VL53L1_SetDistanceMode(Dev,
-			VL53L1_DISTANCEMODE_MEDIUM);
+			VL53L1_DISTANCEMODE_LONG);
 	VL53L1DevDataSet(Dev, CurrentParameters.OutputMode,
-			VL53L1_OUTPUTMODE_NEAREST);
+			VL53L1_OUTPUTMODE_STRONGEST);
 	VL53L1_SmudgeCorrectionEnable(Dev,
 			VL53L1_SMUDGE_CORRECTION_NONE);
 
@@ -3996,4 +3996,241 @@ VL53L1_Error VL53L1_PerformOffsetPerVcselCalibration(VL53L1_DEV Dev,
 	return Status;
 }
 
+// typedef struct {
 
+
+// 	uint8_t  zone_id;
+
+// 	uint32_t time_stamp;
+
+// 	//first_bin ?
+// 	//buffer_size ?
+// 	//number_of_bins ?
+
+// 	uint16_t VL53L1_p_019;
+
+// 	uint8_t  VL53L1_p_022;
+
+// 	uint8_t  VL53L1_p_023;
+
+// 	uint8_t  VL53L1_p_024;
+
+// 	uint32_t bin_data[VL53L1_XTALK_HISTO_BINS];
+
+// 	uint16_t phasecal_result__reference_phase;
+
+// 	uint8_t  phasecal_result__vcsel_start;
+
+// 	uint8_t  cal_config__vcsel_start;
+
+// 	uint16_t vcsel_width;
+
+// 	//fast_osc_frequency ?
+
+// 	uint16_t zero_distance_phase;
+
+
+// } VL53L1_xtalk_histogram_shape_t;
+
+// VL53L1_Error VL53L1_AppliXtalkCalibration(VL53L1_DEV Dev) {
+//   VL53L1_Error Status = VL53L1_ERROR_NONE;
+//   VL53L1_CalibrationData_t CalibrationData;
+//   VL53L1_CustomerNvmManaged_t *pC;
+//   VL53L1_xtalk_histogram_data_t *pc_xtalkhisto_shape;
+
+//   Status = VL53L1_GetCalibrationData(Dev, &CalibrationData);
+
+//   if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+//   pC = &CalibrationData.customer;
+
+//   pC->ref_spad_man__num_requested_ref_spads = 9;
+//   pC->ref_spad_man__ref_location = 1;
+
+//   pC->global_config__spad_enables_ref_0 = 0xFF;
+//   pC->global_config__spad_enables_ref_1 = 0x5F;
+//   pC->global_config__spad_enables_ref_2 = 0xFF;
+//   pC->global_config__spad_enables_ref_3 = 0xFF;
+//   pC->global_config__spad_enables_ref_4 = 0xFE;
+//   pC->global_config__spad_enables_ref_5 = 0x0F;
+
+//   /*load xtalk data to calibration file*/
+//   pC->algo__crosstalk_compensation_plane_offset_kcps = 1.21875;
+//   pC->algo__crosstalk_compensation_x_plane_gradient_kcps = 0;
+//   pC->algo__crosstalk_compensation_y_plane_gradient_kcps = 0;
+
+//   pc_xtalkhisto_shape = &CalibrationData.xtalkhisto;
+//   pc_xtalkhisto_shape->xtalk_shape.zone_id = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.time_stamp = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.phasecal_result__reference_phase = 5.153809;
+//   pc_xtalkhisto_shape->xtalk_shape.phasecal_result__vcsel_start = 6;
+//   pc_xtalkhisto_shape->xtalk_shape.cal_config__vcsel_start = 9;
+//   pc_xtalkhisto_shape->xtalk_shape.vcsel_width = 2.5;
+//   pc_xtalkhisto_shape->xtalk_shape.zero_distance_phase = 2.153809;
+
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[0] = 0.019531;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[1] = 0.392578;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[2] = 0.426758;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[3] = 0.161133;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[4] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[5] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[6] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[7] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[8] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[9] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[10] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[11] = 0;
+
+//   Status = VL53L1_SetCalibrationData(Dev, &CalibrationData);
+
+//   if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+//   Status = VL53L1_enable_xtalk_compensation(Dev);
+
+//   if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+// ENDFUNC:
+//   LOG_FUNCTION_END(Status);
+//   return Status;
+// }
+
+/*no target at tof head*/
+// VL53L1_Error VL53L1_AppliXtalkCalibration(VL53L1_DEV Dev) {
+//   VL53L1_Error Status = VL53L1_ERROR_NONE;
+//   VL53L1_CalibrationData_t CalibrationData;
+//   VL53L1_CustomerNvmManaged_t *pC;
+//   VL53L1_xtalk_histogram_data_t *pc_xtalkhisto_shape;
+
+//   Status = VL53L1_GetCalibrationData(Dev, &CalibrationData);
+
+//   if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+//   pC = &CalibrationData.customer;
+
+//   /*load refSPAD data to calibration file*/
+//   pC->ref_spad_man__num_requested_ref_spads = 9;
+//   pC->ref_spad_man__ref_location = 1;
+
+//   pC->global_config__spad_enables_ref_0 = 0xFF;
+//   pC->global_config__spad_enables_ref_1 = 0x5F;
+//   pC->global_config__spad_enables_ref_2 = 0xFF;
+//   pC->global_config__spad_enables_ref_3 = 0xFF;
+//   pC->global_config__spad_enables_ref_4 = 0xFE;
+//   pC->global_config__spad_enables_ref_5 = 0x0F;
+
+//   /*load xtalk data to calibration file*/
+//   pC->algo__crosstalk_compensation_plane_offset_kcps = 0x234;
+//   pC->algo__crosstalk_compensation_x_plane_gradient_kcps = 0;
+//   pC->algo__crosstalk_compensation_y_plane_gradient_kcps = 0;
+
+//   pc_xtalkhisto_shape = &CalibrationData.xtalkhisto;
+//   pc_xtalkhisto_shape->xtalk_shape.zone_id = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.time_stamp = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.phasecal_result__reference_phase =0x2908;
+//   pc_xtalkhisto_shape->xtalk_shape.phasecal_result__vcsel_start = 0x06;
+//   pc_xtalkhisto_shape->xtalk_shape.cal_config__vcsel_start = 0x09;
+//   pc_xtalkhisto_shape->xtalk_shape.vcsel_width = 0x0028;
+//   pc_xtalkhisto_shape->xtalk_shape.zero_distance_phase = 0x1108;
+
+//   pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_019 = 0xBCA3;
+//   pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_022 = 0x00;
+//   pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_023 = 0x0C;
+//   pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_024 = 0x0C;
+
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[0] = 0x002B;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[1] = 0x0193;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[2] = 0x01A6;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[3] = 0x009C;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[4] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[5] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[6] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[7] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[8] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[9] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[10] = 0;
+//   pc_xtalkhisto_shape->xtalk_shape.bin_data[11] = 0;
+
+//   Status = VL53L1_SetCalibrationData(Dev, &CalibrationData);
+
+//   if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+//   Status = VL53L1_enable_xtalk_compensation(Dev);
+
+//   if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+// ENDFUNC:
+//   LOG_FUNCTION_END(Status);
+//   return Status;
+// }
+
+VL53L1_Error VL53L1_AppliXtalkCalibration(VL53L1_DEV Dev) {
+  VL53L1_Error Status = VL53L1_ERROR_NONE;
+  VL53L1_CalibrationData_t CalibrationData;
+  VL53L1_CustomerNvmManaged_t *pC;
+  VL53L1_xtalk_histogram_data_t *pc_xtalkhisto_shape;
+
+  Status = VL53L1_GetCalibrationData(Dev, &CalibrationData);
+  if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+  pC = &CalibrationData.customer;
+
+  /*load refSPAD data to calibration file*/
+  pC->ref_spad_man__num_requested_ref_spads = 8;
+  pC->ref_spad_man__ref_location = 1;
+  pC->global_config__ref_en_start_select = 0;
+
+  pC->global_config__spad_enables_ref_0 = 255;
+  pC->global_config__spad_enables_ref_1 = 95;
+  pC->global_config__spad_enables_ref_2 = 255;
+  pC->global_config__spad_enables_ref_3 = 255;
+  pC->global_config__spad_enables_ref_4 = 254;
+  pC->global_config__spad_enables_ref_5 = 15;
+
+  pC->ref_spad_char__total_rate_target_mcps = 2560;
+  pC->algo__part_to_part_range_offset_mm = 0;
+  pC->mm_config__inner_offset_mm = 27;
+  pC->mm_config__outer_offset_mm = 7;
+
+  /*load xtalk data to calibration file*/
+  pC->algo__crosstalk_compensation_plane_offset_kcps = 498;
+  pC->algo__crosstalk_compensation_x_plane_gradient_kcps = 0;
+  pC->algo__crosstalk_compensation_y_plane_gradient_kcps = 0;
+
+  pc_xtalkhisto_shape = &CalibrationData.xtalkhisto;
+
+  pc_xtalkhisto_shape->xtalk_shape.zone_id = 0;
+  pc_xtalkhisto_shape->xtalk_shape.time_stamp = 0;
+  pc_xtalkhisto_shape->xtalk_shape.phasecal_result__reference_phase =10590;
+  pc_xtalkhisto_shape->xtalk_shape.phasecal_result__vcsel_start = 6;
+  pc_xtalkhisto_shape->xtalk_shape.cal_config__vcsel_start = 9;
+  pc_xtalkhisto_shape->xtalk_shape.vcsel_width = 40;
+  pc_xtalkhisto_shape->xtalk_shape.zero_distance_phase = 4446;
+
+  pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_019 = 48291;
+  pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_022 = 0;
+  pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_023 = 12;
+  pc_xtalkhisto_shape->xtalk_shape.VL53L1_p_024 = 12;
+
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[0] = 30;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[1] = 404;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[2] = 418;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[3] = 172;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[4] = 0;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[5] = 0;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[6] = 0;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[7] = 0;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[8] = 0;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[9] = 0;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[10] = 0;
+  pc_xtalkhisto_shape->xtalk_shape.bin_data[11] = 0;
+
+  Status = VL53L1_SetCalibrationData(Dev, &CalibrationData);
+  if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+  Status = VL53L1_enable_xtalk_compensation(Dev);
+  if (Status != VL53L1_ERROR_NONE) goto ENDFUNC;
+
+ENDFUNC:
+  LOG_FUNCTION_END(Status);
+  return Status;
+}

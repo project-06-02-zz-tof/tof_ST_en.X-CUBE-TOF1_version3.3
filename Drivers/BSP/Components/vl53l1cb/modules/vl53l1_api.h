@@ -1420,6 +1420,7 @@ VL53L1_Error VL53L1_SetThresholdConfig(VL53L1_DEV Dev,
 VL53L1_Error VL53L1_GetThresholdConfig(VL53L1_DEV Dev,
 		VL53L1_DetectionConfig_t *pConfig);
 
+VL53L1_Error VL53L1_AppliXtalkCalibration(VL53L1_DEV Dev);
 
 /** @} VL53L1_Thresholds_group */
 

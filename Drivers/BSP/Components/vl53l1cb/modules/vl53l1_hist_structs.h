@@ -250,6 +250,11 @@ typedef struct {
 
 	uint32_t time_stamp;
 
+	//first_bin ?
+	//buffer_size ?
+	//number_of_bins ?
+
+	uint16_t VL53L1_p_019;
 
 	uint8_t  VL53L1_p_022;
 
@@ -259,8 +264,6 @@ typedef struct {
 
 	uint32_t bin_data[VL53L1_XTALK_HISTO_BINS];
 
-
-
 	uint16_t phasecal_result__reference_phase;
 
 	uint8_t  phasecal_result__vcsel_start;
@@ -269,7 +272,7 @@ typedef struct {
 
 	uint16_t vcsel_width;
 
-	uint16_t VL53L1_p_019;
+	//fast_osc_frequency ?
 
 	uint16_t zero_distance_phase;
 
