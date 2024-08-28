@@ -43,6 +43,7 @@ static RANGING_SENSOR_Result_t Result;
 static int32_t status = 0;
 static volatile uint8_t PushButtonDetected = 0;
 volatile uint8_t ToF_EventDetected = 0;
+static uint8_t calibration_data_buf_[1024] = {0};
 
 /* Private function prototypes -----------------------------------------------*/
 static void MX_53L1A2_SimpleRanging_Init(void);
@@ -96,6 +97,12 @@ static void MX_53L1A2_SimpleRanging_Init(void)
 
   printf("53L1A2 Simple Ranging demo application\n");
   status = VL53L1A2_RANGING_SENSOR_Init(VL53L1A2_DEV_CENTER);
+
+  // l1a2rangeingGetCalibrationData(calibration_data_buf_);
+  // for (uint16_t i = 0; i < 0x198; i++) {
+  //   printf("0x%x,", calibration_data_buf_[i]);
+  // }
+  // printf("\r\n");
 
   if (status != BSP_ERROR_NONE)
   {

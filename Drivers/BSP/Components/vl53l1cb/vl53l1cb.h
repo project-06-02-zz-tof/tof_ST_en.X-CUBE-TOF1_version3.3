@@ -202,6 +202,7 @@ int32_t VL53L1CB_GetPowerMode(VL53L1CB_Object_t *pObj, uint32_t *pPowerMode);
 /* additional methods */
 int32_t VL53L1CB_OffsetCalibration(VL53L1CB_Object_t *pObj, uint32_t CalDistance);
 int32_t VL53L1CB_XTalkCalibration(VL53L1CB_Object_t *pObj);
+void vl53l1cbGetCalibrationData(uint8_t *buf_temp);
 /**
   * @}
   */

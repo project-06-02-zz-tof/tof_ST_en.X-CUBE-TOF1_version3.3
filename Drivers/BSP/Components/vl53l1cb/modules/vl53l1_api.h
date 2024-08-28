@@ -1422,6 +1422,10 @@ VL53L1_Error VL53L1_GetThresholdConfig(VL53L1_DEV Dev,
 
 VL53L1_Error VL53L1_AppliXtalkCalibration(VL53L1_DEV Dev);
 
+void vl53l1ApiGet_calibration_bufdata(uint8_t *buf_temp);
+
+VL53L1_Error vl53l1apiAppliXtalkCalibrationBuf(VL53L1_DEV Dev);
+
 /** @} VL53L1_Thresholds_group */
 
 

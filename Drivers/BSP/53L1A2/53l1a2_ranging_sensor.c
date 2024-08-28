@@ -564,6 +564,8 @@ static int32_t VL53L1CB_Probe(uint32_t Instance)
   return ret;
 }
 
+void l1a2rangeingGetCalibrationData(uint8_t *buf_temp) { vl53l1cbGetCalibrationData(buf_temp); }
+
 /**
   * @}
   */

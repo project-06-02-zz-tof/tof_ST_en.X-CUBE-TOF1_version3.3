@@ -146,6 +146,7 @@ int32_t VL53L1A2_RANGING_SENSOR_GetPowerMode(uint32_t Instance, uint32_t *pPower
 
 int32_t VL53L1A2_RANGING_SENSOR_OffsetCalibration(uint32_t Instance, uint32_t CalDistance);
 int32_t VL53L1A2_RANGING_SENSOR_XTalkCalibration(uint32_t Instance);
+void l1a2rangeingGetCalibrationData(uint8_t *buf_temp);
 /**
   * @}
   */

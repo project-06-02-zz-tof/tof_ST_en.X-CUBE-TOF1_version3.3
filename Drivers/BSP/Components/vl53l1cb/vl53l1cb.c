@@ -143,21 +143,24 @@ int32_t VL53L1CB_Init(VL53L1CB_Object_t *pObj)
   {
     ret = VL53L1CB_ERROR;
   }
-  else if (VL53L1_PerformRefSpadManagement(pObj) != VL53L1_ERROR_NONE)
-  {
-    ret = VL53L1CB_ERROR;
-  }
+  // else if (VL53L1_PerformRefSpadManagement(pObj) != VL53L1_ERROR_NONE)
+  // {
+  //   ret = VL53L1CB_ERROR;
+  // }
   // else if(VL53L1_AppliXtalkCalibration(pObj)!= VL53L1_ERROR_NONE)
   // {
   //   ret = VL53L1CB_ERROR;
   // }
-  else if(VL53L1CB_XTalkCalibration(pObj) != VL53L1_ERROR_NONE)
-  {
+  // else if(VL53L1CB_XTalkCalibration(pObj) != VL53L1_ERROR_NONE)
+  // {
+  //   ret = VL53L1CB_ERROR;
+  // }
+
+  else if (vl53l1apiAppliXtalkCalibrationBuf(pObj) != VL53L1_ERROR_NONE) {
     ret = VL53L1CB_ERROR;
   }
 
-  else
-  {
+  else {
     pObj->IsRanging = 0;
     pObj->IsBlocking = 0;
     pObj->IsContinuous = 0;
@@ -731,6 +734,8 @@ static int32_t vl53l1cb_get_result(VL53L1CB_Object_t *pObj, VL53L1CB_Result_t *p
 
   return ret;
 }
+
+void vl53l1cbGetCalibrationData(uint8_t *buf_temp) { vl53l1ApiGet_calibration_bufdata(buf_temp); }
 
 /**
   * @}
